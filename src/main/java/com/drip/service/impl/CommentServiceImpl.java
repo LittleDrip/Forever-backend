@@ -1,5 +1,6 @@
 package com.drip.service.impl;
 
+import cn.dev33.satoken.annotation.SaCheckLogin;
 import cn.hutool.core.bean.BeanUtil;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
@@ -11,9 +12,9 @@ import com.drip.mapper.UserMapper;
 import com.drip.service.CommentService;
 import com.drip.util.Result;
 import jakarta.annotation.Resource;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -73,12 +74,15 @@ public class CommentServiceImpl extends ServiceImpl<CommentMapper, Comment> impl
     }
 
     @Override
+    @SaCheckLogin
     public Result saveComment(CommentDTO commentDTO) {
         // 模拟获取认证信息
-        User user = userMapper.selectById(1);
+        User user = userMapper.selectById(2);
         Comment comment = BeanUtil.copyProperties(commentDTO, Comment.class);
         comment.setUid(user.getId());
         comment.setUser(user);
+        comment.setCreateTime(new Date());
+        System.out.println(new Date());
         save(comment);
         return Result.ok(comment);
     }
@@ -108,6 +112,7 @@ public class CommentServiceImpl extends ServiceImpl<CommentMapper, Comment> impl
         formattedComment.put("address", comment.getAddress());
         formattedComment.put("content", comment.getContent());
         formattedComment.put("likes", comment.getLikes());
+        formattedComment.put("createTime", comment.getCreateTime());
         formattedComment.put("user", loadUserInfo(comment.getUid()));
 
         // 子评论

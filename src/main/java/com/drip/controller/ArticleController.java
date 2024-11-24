@@ -1,5 +1,6 @@
 package com.drip.controller;
 
+import cn.dev33.satoken.annotation.SaCheckLogin;
 import com.drip.service.ArticleService;
 import com.drip.util.Result;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -9,10 +10,10 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("article")
 @RequiredArgsConstructor
-@CrossOrigin
 public class ArticleController {
     private final ArticleService articleService;
 
+//    @SaCheckLogin
     @Tag(name = "获得所有文章")
     @GetMapping("/list")
     public Result getAllArticle(){

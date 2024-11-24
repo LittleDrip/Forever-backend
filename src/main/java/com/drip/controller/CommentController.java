@@ -1,6 +1,7 @@
 package com.drip.controller;
 
 
+import cn.dev33.satoken.annotation.SaCheckLogin;
 import com.drip.domain.dto.CommentDTO;
 
 import com.drip.service.CommentLikeService;
@@ -10,9 +11,6 @@ import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.annotation.Resource;
 import org.springframework.web.bind.annotation.*;
-
-
-import java.util.List;
 
 /**
  * <p>
@@ -42,6 +40,7 @@ public class CommentController {
 
     @Operation(summary = "添加评论")
     @PostMapping("/save")
+    @SaCheckLogin
     public Result save(@RequestBody CommentDTO commentDTO) {
         return commentService.saveComment(commentDTO);
     }

@@ -18,7 +18,7 @@ import java.util.List;
 */
 @Service
 public class ArticleServiceImpl extends ServiceImpl<ArticleMapper, Article>
-    implements ArticleService{
+    implements ArticleService {
 
     @Override
     public Result getAllArticle() {
