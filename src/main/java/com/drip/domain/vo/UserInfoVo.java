@@ -40,15 +40,6 @@ public class UserInfoVo {
      */
     private String avatar;
 
-    /**
-     * 等级
-     */
-    private Integer level;
-
-    /**
-     * 个人主页
-     */
-    private String homeLink;
 
     /**
      * 创建时间

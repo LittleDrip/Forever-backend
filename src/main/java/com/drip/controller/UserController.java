@@ -7,6 +7,7 @@ import cn.dev33.satoken.util.SaResult;
 import com.drip.domain.dto.LoginDTO;
 import com.drip.service.UserService;
 import com.drip.util.Result;
+import com.drip.util.ThreadLocalUtil;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.annotation.Resource;
@@ -40,6 +41,15 @@ public class UserController {
     @GetMapping("getUserInfo")
     public Result getUserInfo() {
         return userService.getUserInfo();
+    }
+
+//    退出登录
+    @SaCheckLogin
+    @GetMapping("logout")
+    public Result logout() {
+        StpUtil.logout();
+        ThreadLocalUtil.remove();
+        return Result.ok("退出登录成功");
     }
 
 }

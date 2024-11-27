@@ -13,15 +13,15 @@ public enum ResultCodeEnum {
     USERNAME_USED(505,"userNameUsed");
 
     private Integer code;
-    private String message;
-    private ResultCodeEnum(Integer code, String message) {
+    private String msg;
+    private ResultCodeEnum(Integer code, String msg) {
         this.code = code;
-        this.message = message;
+        this.msg = msg;
     }
     public Integer getCode() {
         return code;
     }
-    public String getMessage() {
-        return message;
+    public String getMsg() {
+        return msg;
     }
 }

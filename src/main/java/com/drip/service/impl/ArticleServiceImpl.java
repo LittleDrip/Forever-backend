@@ -1,12 +1,14 @@
 package com.drip.service.impl;
 
 import cn.hutool.core.bean.BeanUtil;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.drip.domain.entity.Article;
 import com.drip.domain.vo.ArticleVo;
 import com.drip.service.ArticleService;
 import com.drip.mapper.ArticleMapper;
 import com.drip.util.Result;
+import com.drip.util.page.PageParam;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -28,9 +30,26 @@ public class ArticleServiceImpl extends ServiceImpl<ArticleMapper, Article>
     }
 
     @Override
+    public Result getArticleByPage(PageParam pageParam) {
+        Page<Article> page=Page.of(pageParam.getCurrent(),pageParam.getSize());
+        List<Article> list = lambdaQuery().page(page).getRecords();
+        List<ArticleVo> articleVos = BeanUtil.copyToList(list, ArticleVo.class);
+        return Result.ok(articleVos);
+
+    }
+
+
+    @Override
     public Result getArticleById(Integer id) {
         Article article = getById(id);
         return Result.ok(article);
+    }
+
+    @Override
+    public Result getTotals(PageParam pageParam) {
+        Page<Article> page=Page.of(pageParam.getCurrent(),pageParam.getSize());
+        long total = lambdaQuery().page(page).getPages();
+        return Result.ok(total);
     }
 }
 

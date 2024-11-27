@@ -1,6 +1,10 @@
 server:
   port: 7070
 
+evaluation:
+  file:
+    path: classpath:evaluation.json
+
 sa-token:
   # jwt秘钥
   jwt-secret-key: asdasdasifhueuiwyurfewbfjsdafjk

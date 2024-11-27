@@ -3,6 +3,7 @@ package com.drip.service;
 import com.drip.domain.entity.Article;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.drip.util.Result;
+import com.drip.util.page.PageParam;
 
 /**
 * @author qq316
@@ -13,5 +14,9 @@ public interface ArticleService extends IService<Article> {
 
     Result getAllArticle();
 
+    Result getArticleByPage(PageParam pageParam);
+
     Result getArticleById(Integer id);
+
+    Result getTotals(PageParam pageParam);
 }

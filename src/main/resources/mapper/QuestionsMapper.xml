@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.drip.mapper.QuestionsMapper">
+
+    <resultMap id="BaseResultMap" type="com.drip.domain.entity.Questions">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="pid" column="pid" jdbcType="INTEGER"/>
+            <result property="stcontent" column="stContent" jdbcType="VARCHAR"/>
+            <result property="questiontype" column="questionType" jdbcType="INTEGER"/>
+            <result property="stscore" column="stScore" jdbcType="INTEGER"/>
+            <result property="stanswer" column="stAnswer" jdbcType="VARCHAR"/>
+            <result property="options" column="options" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,pid,stContent,
+        questionType,stScore,stAnswer,
+        options
+    </sql>
+</mapper>

@@ -15,6 +15,7 @@ import com.drip.service.UserService;
 import com.drip.mapper.UserMapper;
 import com.drip.util.Result;
 import com.drip.util.ResultCodeEnum;
+import com.drip.util.ThreadLocalUtil;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 
@@ -57,6 +58,8 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User>
         }
         String id = StpUtil.getLoginIdByToken(tokenValue).toString();
         User user = getById(id);
+        // 存储用户信息到 Sa-Token 的会话中
+        StpUtil.getSession().set("user", user);
         UserInfoVo userInfoVo = BeanUtil.copyProperties(user, UserInfoVo.class);
         return Result.ok(userInfoVo);
     }

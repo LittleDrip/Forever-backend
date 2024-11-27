@@ -1,6 +1,7 @@
 package com.drip.service.impl;
 
 import cn.dev33.satoken.annotation.SaCheckLogin;
+import cn.dev33.satoken.stp.StpUtil;
 import cn.hutool.core.bean.BeanUtil;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
@@ -11,6 +12,8 @@ import com.drip.mapper.CommentMapper;
 import com.drip.mapper.UserMapper;
 import com.drip.service.CommentService;
 import com.drip.util.Result;
+import com.drip.util.ResultCodeEnum;
+import com.drip.util.ThreadLocalUtil;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 
@@ -77,7 +80,10 @@ public class CommentServiceImpl extends ServiceImpl<CommentMapper, Comment> impl
     @SaCheckLogin
     public Result saveComment(CommentDTO commentDTO) {
         // 模拟获取认证信息
-        User user = userMapper.selectById(2);
+        User user = (User) StpUtil.getSession().get("user");
+        if (user == null) {
+            return Result.build(null, ResultCodeEnum.NOTLOGIN); // 或其他错误码
+        }
         Comment comment = BeanUtil.copyProperties(commentDTO, Comment.class);
         comment.setUid(user.getId());
         comment.setUser(user);
