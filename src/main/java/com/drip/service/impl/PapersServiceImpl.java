@@ -9,6 +9,7 @@ import com.drip.domain.entity.Papers;
 import com.drip.domain.entity.Questions;
 import com.drip.domain.entity.User;
 import com.drip.domain.entity.UserPapers;
+import com.drip.domain.vo.UserPapersDetailVo;
 import com.drip.domain.vo.UserPapersVo;
 import com.drip.service.EvaluationService;
 import com.drip.service.PapersService;
@@ -69,7 +70,7 @@ public class PapersServiceImpl extends ServiceImpl<PapersMapper, Papers>
             }
         }
 //        todo:根据正确个数给出评价，存到user_paper表里面
-        String evaluation = evaluationService.getEvaluation(correctCount);
+        String evaluation = evaluationService.getEvaluation(correctCount,"paper"+paperId);
 //        根据SaToken的会话获取用户
         User user = (User) StpUtil.getSession().get("user");
         Long userId = user.getId();
@@ -92,6 +93,21 @@ public class PapersServiceImpl extends ServiceImpl<PapersMapper, Papers>
         List<UserPapers> list = userPapersService.lambdaQuery().eq(UserPapers::getUserId, userId).select(UserPapers::getPaperId).list();
         List<UserPapersVo> userPapersVos = BeanUtil.copyToList(list, UserPapersVo.class);
         return Result.ok(userPapersVos);
+    }
+
+    @Override
+    public Result getEvaluation(int id) {
+        User user = (User) StpUtil.getSession().get("user");
+        Long userId = user.getId();
+        UserPapers userPapers = userPapersService.lambdaQuery()
+                .eq(UserPapers::getUserId, userId)
+                .eq(UserPapers::getPaperId, id)
+                .one();
+        if (userPapers == null) {
+            return Result.build(null,404, "你尚未开始作答试卷");
+        }
+        UserPapersDetailVo userPapersDetailVo = BeanUtil.copyProperties(userPapers, UserPapersDetailVo.class);
+        return Result.ok(userPapersDetailVo);
     }
 }
 

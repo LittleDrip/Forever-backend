@@ -17,4 +17,6 @@ public interface PapersService extends IService<Papers> {
     Result getScoreAndSave(SubmitAnswerDTO submitAnswerDTO);
 
     Result getPapersByUser();
+
+    Result getEvaluation(int id);
 }

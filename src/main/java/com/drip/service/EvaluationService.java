@@ -6,7 +6,6 @@ import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Service;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-
 import java.io.IOException;
 import java.util.Map;
 
@@ -16,7 +15,8 @@ public class EvaluationService {
     @Value("classpath:evaluation.json")
     private Resource evaluationFile;
 
-    private Map<String, String> evaluationMap;
+    // 用 Map 来存储每个试卷的评价内容
+    private Map<String, Map<String, String>> evaluationMap;
 
     @PostConstruct
     public void init() throws IOException {
@@ -25,7 +25,8 @@ public class EvaluationService {
         this.evaluationMap = objectMapper.readValue(evaluationFile.getInputStream(), Map.class);
     }
 
-    public String getEvaluation(int correctCount) {
+    public String getEvaluation(int correctCount, String paperId) {
+        // 根据用户的答对题数确定等级
         String level;
         if (correctCount >= 0 && correctCount <= 6) {
             level = "level5";
@@ -39,6 +40,13 @@ public class EvaluationService {
             level = "level1";
         }
 
-        return evaluationMap.get(level);
+        // 根据试卷 ID 获取对应的评价内容
+        Map<String, String> paperEvaluations = evaluationMap.get(paperId);
+        if (paperEvaluations != null) {
+            return paperEvaluations.get(level);
+        }
+
+        // 如果找不到对应的试卷或等级，返回默认值
+        return "未找到该试卷的评价内容";
     }
 }

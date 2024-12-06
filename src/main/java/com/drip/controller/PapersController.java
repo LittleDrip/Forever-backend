@@ -31,4 +31,10 @@ public class PapersController {
     public Result getPapers() {
         return papersService.getPapersByUser();
     }
+
+    @Operation(summary = "获得当前试卷评价")
+    @GetMapping("getEvaluation/{id}")
+    public Result getEvaluation(@PathVariable("id") int id) {
+        return papersService.getEvaluation(id);
+    }
 }
