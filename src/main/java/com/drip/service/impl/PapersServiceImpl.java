@@ -96,6 +96,13 @@ public class PapersServiceImpl extends ServiceImpl<PapersMapper, Papers>
     }
 
     @Override
+    public List getPapersByUserId(String userId) {
+        List<UserPapers> list = userPapersService.lambdaQuery().eq(UserPapers::getUserId, userId).select(UserPapers::getPaperId).list();
+        List<UserPapersVo> userPapersVos = BeanUtil.copyToList(list, UserPapersVo.class);
+        return userPapersVos;
+    }
+
+    @Override
     public Result getEvaluation(int id) {
         User user = (User) StpUtil.getSession().get("user");
         Long userId = user.getId();
@@ -109,6 +116,21 @@ public class PapersServiceImpl extends ServiceImpl<PapersMapper, Papers>
         UserPapersDetailVo userPapersDetailVo = BeanUtil.copyProperties(userPapers, UserPapersDetailVo.class);
         return Result.ok(userPapersDetailVo);
     }
+
+    @Override
+    public String getEvaluation(String userId, int id) {
+        UserPapers userPapers = userPapersService.lambdaQuery()
+                .eq(UserPapers::getUserId, userId)
+                .eq(UserPapers::getPaperId, id)
+                .one();
+        if (userPapers == null) {
+            return "你尚未开始作答试卷";
+        }
+        UserPapersDetailVo userPapersDetailVo = BeanUtil.copyProperties(userPapers, UserPapersDetailVo.class);
+        return userPapersDetailVo.getEvaluation();
+    }
+
+
 }
 
 

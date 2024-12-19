@@ -5,6 +5,8 @@ import com.drip.domain.entity.Papers;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.drip.util.Result;
 
+import java.util.List;
+
 /**
 * @author qq316
 * @description 针对表【papers(试卷表)】的数据库操作Service
@@ -18,5 +20,13 @@ public interface PapersService extends IService<Papers> {
 
     Result getPapersByUser();
 
+    List getPapersByUserId(String userId);
+
+
+
+
     Result getEvaluation(int id);
+
+    String  getEvaluation(String userId,int id);
+
 }
