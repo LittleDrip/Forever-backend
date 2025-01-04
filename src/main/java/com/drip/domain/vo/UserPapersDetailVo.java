@@ -13,6 +13,10 @@ public class UserPapersDetailVo {
     private String evaluation;
 
     /**
+     * 测评等级
+     */
+    private String level;
+    /**
      * 创建时间
      */
     private Date createdAt;

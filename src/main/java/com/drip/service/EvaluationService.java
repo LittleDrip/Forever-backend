@@ -1,5 +1,6 @@
 package com.drip.service;
 
+import com.drip.domain.entity.EvaluationResult;
 import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.Resource;
@@ -25,7 +26,7 @@ public class EvaluationService {
         this.evaluationMap = objectMapper.readValue(evaluationFile.getInputStream(), Map.class);
     }
 
-    public String getEvaluation(int correctCount, String paperId) {
+    public EvaluationResult getEvaluation(int correctCount, String paperId) {
         // 根据用户的答对题数确定等级
         String level;
         if (correctCount >= 0 && correctCount <= 6) {
@@ -41,12 +42,14 @@ public class EvaluationService {
         }
 
         // 根据试卷 ID 获取对应的评价内容
+        String evaluation = "未找到该试卷的评价内容";
         Map<String, String> paperEvaluations = evaluationMap.get(paperId);
         if (paperEvaluations != null) {
-            return paperEvaluations.get(level);
+            evaluation = paperEvaluations.getOrDefault(level, "未找到该等级的评价内容");
         }
 
         // 如果找不到对应的试卷或等级，返回默认值
-        return "未找到该试卷的评价内容";
+        // 返回封装的结果
+        return new EvaluationResult(level, evaluation);
     }
 }

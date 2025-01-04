@@ -37,6 +37,10 @@ import java.util.function.Function;
         return request -> getHealthAssessment(request, 1);
     }
 
+//    接口：
+//    签到接口领积分 领完积分兑换东西
+//    歇一歇兑换函数
+
     @Bean
     @Description("根据抑郁测验做出心理健康评估")
     public Function<PapersRequest, String> depressedHealthAssessment(){

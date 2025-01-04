@@ -37,6 +37,11 @@ public class UserPapers implements Serializable {
     private String evaluation;
 
     /**
+     * 测评等级
+     */
+    private String level;
+
+    /**
      * 做题状态 (0: 未做,1： 已完成)
      */
     private Integer status;

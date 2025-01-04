@@ -5,10 +5,7 @@ import cn.hutool.core.bean.BeanUtil;
 import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.drip.domain.dto.SubmitAnswerDTO;
-import com.drip.domain.entity.Papers;
-import com.drip.domain.entity.Questions;
-import com.drip.domain.entity.User;
-import com.drip.domain.entity.UserPapers;
+import com.drip.domain.entity.*;
 import com.drip.domain.vo.UserPapersDetailVo;
 import com.drip.domain.vo.UserPapersVo;
 import com.drip.service.EvaluationService;
@@ -70,7 +67,9 @@ public class PapersServiceImpl extends ServiceImpl<PapersMapper, Papers>
             }
         }
 //        todo:根据正确个数给出评价，存到user_paper表里面
-        String evaluation = evaluationService.getEvaluation(correctCount,"paper"+paperId);
+        EvaluationResult evaluationResult = evaluationService.getEvaluation(correctCount, "paper" + paperId);
+        String evaluation = evaluationResult.getEvaluation();
+        String level = evaluationResult.getLevel();
 //        根据SaToken的会话获取用户
         User user = (User) StpUtil.getSession().get("user");
         Long userId = user.getId();
@@ -79,7 +78,9 @@ public class PapersServiceImpl extends ServiceImpl<PapersMapper, Papers>
         userPapers.setUserId(userId);
         userPapers.setPaperId(paperId.intValue());
         userPapers.setEvaluation(evaluation);
+        userPapers.setLevel(level);
         userPapers.setStatus(1);  // 设置状态为已完成
+
         UpdateWrapper<UserPapers> updateWrapper = new UpdateWrapper<>();
         updateWrapper.eq("user_id", userId).eq("paper_id", paperId);
         userPapersService.saveOrUpdate(userPapers, updateWrapper);
