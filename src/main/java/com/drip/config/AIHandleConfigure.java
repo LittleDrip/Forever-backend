@@ -58,6 +58,11 @@ import java.util.function.Function;
     public Function<PapersRequest, String> socialComfortHealthAssessment(){
         return request -> getHealthAssessment(request, 4);
     }
+    @Bean
+    @Description("问题是问我几岁")
+    public Function<PapersRequest, String> getAge(){
+        return request-> "20";
+    }
 
 //    @Bean
 //    @Description("获得董泽豪年龄")

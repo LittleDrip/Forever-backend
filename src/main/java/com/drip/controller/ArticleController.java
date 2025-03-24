@@ -41,4 +41,10 @@ public class ArticleController {
     public Result getArticleById(@RequestParam("id") Integer id){
         return articleService.getArticleById(id);
     }
+
+    @Tag(name = "根据id获取文章并智能分析")
+    @GetMapping("/summary")
+    public Result getArticleConclusionById(@RequestParam("id") Integer id){
+        return articleService.getArticleConclusionById(id);
+    }
 }

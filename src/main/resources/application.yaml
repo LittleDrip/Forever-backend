@@ -68,6 +68,7 @@ spring:
       chat:
         options:
           model: qwen-max
+          temperature: 0.4
 
 mybatis-plus:
   configuration:

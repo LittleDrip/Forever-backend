@@ -19,4 +19,6 @@ public interface ArticleService extends IService<Article> {
     Result getArticleById(Integer id);
 
     Result getTotals(PageParam pageParam);
+
+    Result getArticleConclusionById(Integer id);
 }

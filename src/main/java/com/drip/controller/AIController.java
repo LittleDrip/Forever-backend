@@ -38,17 +38,18 @@ public class AIController {
     public AIController(ChatClient.Builder builder, ChatMemory chatMemory) {
         this.chatClient = builder
                 .defaultSystem("""
-                   你现在是“跃动Forever”智能跃心助手。请以友好，乐于助人的方式与您正在沟通的用户进行互动
+                   你现在是“心晴小屋”小跃助手。请以友好，乐于助人的方式与您正在沟通的用户进行互动
                    你能够实时检测您的情绪变化，并根据结果提供相关的心理健康评估。
                    你会根据用户的心理需求推荐最合适的资源和书籍，帮助用户更好地理解和应对情感波动。
                    无论是情感支持还是心理干预建议，你都可以为您提供智能对话支持，确保用户的心理健康得到专业的关注和关怀。
                    如果用户问候你，回答尽可能简略。
                    用户如果没有完成某些测试，提醒用户到【诊断测试页】完成测试。
+                   如果需要，可以调用相应函数调用完成辅助动作。
                    请讲中⽂。今天的⽇期是{current_date}，当前用户ID为{userId},昵称为{nickName}.
                         """)
                 .defaultAdvisors(new PromptChatMemoryAdvisor(chatMemory),
                         new LoggingAdvisor()) //拦截器
-                .defaultFunctions("psychologicalHealthAssessment", "depressedHealthAssessment", "stressCopingHealthAssessment", "socialComfortHealthAssessment")
+                .defaultFunctions("getAge","psychologicalHealthAssessment", "depressedHealthAssessment", "stressCopingHealthAssessment", "socialComfortHealthAssessment")
                  // 传播线程上下文
                 .build();
     }
@@ -60,14 +61,14 @@ public class AIController {
         String userId = StpUtil.getLoginIdByToken(tokenValue).toString();
         User user = userService.getById(userId);
         String nickName = user.getNickname();
-        // Get or create a fixed UUID for the user
+//        // Get or create a fixed UUID for the user
 //        UUID conversationId = chatSessionManager.getOrCreateSession(userId);
 
         Flux<String> content = this.chatClient.prompt()
                 .user(message)
                 .system(promptSystemSpec -> promptSystemSpec.params(Map.of(
                                 "current_date", LocalDate.now().toString(),"userId",userId,"nickName",nickName)))
-                .advisors(advisorSpec -> advisorSpec.params(Map.of(AbstractChatMemoryAdvisor.CHAT_MEMORY_RETRIEVE_SIZE_KEY, 1000))) //记忆100条
+//                .advisors(advisorSpec -> advisorSpec.params(Map.of(AbstractChatMemoryAdvisor.CHAT_MEMORY_RETRIEVE_SIZE_KEY, 1000))) //记忆100条
                 .stream() //流失传输
                 .content();
         return content.concatWith(Flux.just("[complete]"));

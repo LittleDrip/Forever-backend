@@ -10,6 +10,8 @@ import java.util.Date;
 @NoArgsConstructor
 public class UserInfoVo {
 
+    private Long id;
+
     /**
      * 用户名
      */
