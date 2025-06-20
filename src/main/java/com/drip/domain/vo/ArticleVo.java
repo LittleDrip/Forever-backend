@@ -53,4 +53,8 @@ public class ArticleVo {
      */
     private Integer collectCount;
 
+    /**
+     * 文章主题
+     */
+    private String Tag;
 }

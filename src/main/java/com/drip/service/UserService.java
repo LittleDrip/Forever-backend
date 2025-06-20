@@ -3,6 +3,7 @@ package com.drip.service;
 import cn.dev33.satoken.stp.SaTokenInfo;
 import cn.dev33.satoken.util.SaResult;
 import com.drip.domain.dto.LoginDTO;
+import com.drip.domain.dto.RegisterDTO;
 import com.drip.domain.entity.User;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.drip.util.Result;
@@ -18,4 +19,10 @@ public interface UserService extends IService<User> {
 
 
     Result getUserInfo();
+
+    Result register(RegisterDTO registerDTO);
+
+    Result updateNickname(String nickname);
+
+    Result updateNicknameAndAvatar(String nickname, String avatar);
 }

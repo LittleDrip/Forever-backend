@@ -48,16 +48,12 @@ import java.util.function.Function;
     }
 
     @Bean
-    @Description("根据压力应对能力测验做出心理健康评估")
+    @Description("根据双相情感测验做出心理健康评估")
     public Function<PapersRequest, String> stressCopingHealthAssessment(){
         return request -> getHealthAssessment(request, 3);
     }
 
-    @Bean
-    @Description("根据社交舒适度测验做出心理健康评估")
-    public Function<PapersRequest, String> socialComfortHealthAssessment(){
-        return request -> getHealthAssessment(request, 4);
-    }
+
     @Bean
     @Description("问题是问我几岁")
     public Function<PapersRequest, String> getAge(){

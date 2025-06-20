@@ -99,6 +99,13 @@ public class ArticleServiceImpl extends ServiceImpl<ArticleMapper, Article>
             return Result.ok("总结生成失败：" + e.getMessage());
         }
     }
+
+    @Override
+    public Result getArticleByTag(String tag) {
+        List<Article> list = lambdaQuery().eq(Article::getTag, tag).list();
+        List<ArticleVo> articleVos = BeanUtil.copyToList(list, ArticleVo.class);
+        return Result.ok(articleVos);
+    }
 //    @Override
 //    public Result getArticleConclusionById(Integer id) {
 //        Article article = getById(id);

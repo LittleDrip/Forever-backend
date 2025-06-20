@@ -1,0 +1,669 @@
+2025-04-19T10:55:04.416+08:00  INFO 7880 --- [main] c.a.nacos.client.logging.NacosLogging    : Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback12.LogbackNacosLoggingAdapterBuilder
+2025-04-19T10:55:04.420+08:00  INFO 7880 --- [main] c.a.nacos.client.logging.NacosLogging    : Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapterBuilder
+2025-04-19T10:55:04.422+08:00  INFO 7880 --- [main] c.a.nacos.client.logging.NacosLogging    : Nacos Logging Adapter: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapter match ch.qos.logback.classic.Logger success.
+2025-04-19T10:55:04.429+08:00  INFO 7880 --- [main] c.a.nacos.client.logging.NacosLogging    : Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.log4j2.Log4j2NacosLoggingAdapterBuilder
+2025-04-19T10:55:04.539+08:00  INFO 7880 --- [main] com.drip.ForeverApplication              : Starting ForeverApplication using Java 17.0.7 with PID 7880 (D:\IdeaProject\YueDong-Forever\target\classes started by qq316 in D:\IdeaProject\YueDong-Forever)
+2025-04-19T10:55:04.540+08:00  INFO 7880 --- [main] com.drip.ForeverApplication              : No active profile set, falling back to 1 default profile: "default"
+2025-04-19T10:55:05.507+08:00  INFO 7880 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-04-19T10:55:05.509+08:00  INFO 7880 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-04-19T10:55:05.542+08:00  INFO 7880 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2025-04-19T10:55:05.819+08:00  WARN 7880 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.nacos.NacosConfigAutoConfiguration' of type [com.alibaba.cloud.nacos.NacosConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [nacosAnnotationProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-04-19T10:55:05.829+08:00  WARN 7880 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'nacosConfigProperties' of type [com.alibaba.cloud.nacos.NacosConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [nacosAnnotationProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-04-19T10:55:05.934+08:00  INFO 7880 --- [main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2025-04-19T10:55:05.935+08:00  INFO 7880 --- [main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2025-04-19T10:55:05.938+08:00  WARN 7880 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'nacosConfigManager' of type [com.alibaba.cloud.nacos.NacosConfigManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [nacosAnnotationProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-04-19T10:55:06.444+08:00  INFO 7880 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7070 (http)
+2025-04-19T10:55:06.467+08:00  INFO 7880 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-19T10:55:06.468+08:00  INFO 7880 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-04-19T10:55:06.564+08:00  INFO 7880 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-19T10:55:06.565+08:00  INFO 7880 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1984 ms
+2025-04-19T10:55:06.686+08:00  INFO 7880 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2025-04-19T10:55:06.788+08:00  INFO 7880 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2025-04-19T10:55:10.940+08:00  INFO 7880 --- [main] c.a.c.n.a.NacosAnnotationProcessor       : [Nacos Config] Listening config for annotation: dataId=spring.ai.alibaba.configurable.prompt, group=DEFAULT_GROUP
+2025-04-19T10:55:10.946+08:00  INFO 7880 --- [main] c.a.c.n.a.NacosAnnotationProcessor       : [Nacos Config] register configurablePromptTemplateFactory#method#onConfigChange(List) listener on com.alibaba.cloud.ai.prompt.ConfigurablePromptTemplateFactory@365eaef 
+2025-04-19T10:55:11.317+08:00  INFO 7880 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7070 (http) with context path ''
+2025-04-19T10:55:11.331+08:00  INFO 7880 --- [main] com.drip.ForeverApplication              : Started ForeverApplication in 7.443 seconds (process running for 8.3)
+2025-04-19T10:55:37.462+08:00  INFO 7880 --- [http-nio-7070-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-19T10:55:37.463+08:00  INFO 7880 --- [http-nio-7070-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-19T10:55:37.464+08:00  INFO 7880 --- [http-nio-7070-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-04-19T11:00:18.781+08:00  INFO 7880 --- [lettuce-eventExecutorLoop-1-2] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was /106.63.5.239:6379
+2025-04-19T11:00:18.829+08:00  INFO 7880 --- [lettuce-nioEventLoop-4-2] i.l.core.protocol.ReconnectionHandler    : Reconnected to 106.63.5.239/<unresolved>:6379
+2025-04-19T11:53:55.075+08:00  INFO 7880 --- [lettuce-eventExecutorLoop-1-3] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was /106.63.5.239:6379
+2025-04-19T11:53:55.128+08:00  INFO 7880 --- [lettuce-nioEventLoop-4-3] i.l.core.protocol.ReconnectionHandler    : Reconnected to 106.63.5.239/<unresolved>:6379
+2025-04-19T11:54:16.073+08:00  INFO 7880 --- [http-nio-7070-exec-3] c.d.service.impl.QuestionsServiceImpl    : 查询结果：[Questions(id=67, pid=1, stcontent=你在日常生活中，是否经常感觉到莫名的不安或紧张？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=69, pid=1, stcontent=你是否经常感到自己无法控制情绪或压力？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=70, pid=1, stcontent=当你想到未来的事情时，是否会感到极度不安或担忧？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=71, pid=1, stcontent=你是否经常经历无法解释的胸闷或呼吸困难？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=72, pid=1, stcontent=你是否在面对挑战时常常感到自己无法应对？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=73, pid=1, stcontent=你是否发现自己经常为些许事情过度担心，难以集中注意力？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=74, pid=1, stcontent=当你遇到紧急或危险情况时，是否会感到极度的恐慌？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=75, pid=1, stcontent=你是否有过在社交场合中感到非常不自在或害怕被评价的经历？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=76, pid=1, stcontent=你是否有过由于担心而影响到你的日常生活或工作？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=77, pid=1, stcontent=你是否会因小事而情绪波动很大，容易失控？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=78, pid=1, stcontent=你是否经常感到无法放松，脑海中总有许多负面思维？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=79, pid=1, stcontent=在你遇到压力时，是否很容易产生焦虑或过度担忧？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=80, pid=1, stcontent=你是否觉得自己有时无法控制自己的焦虑感？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=81, pid=1, stcontent=你是否在与他人交往时，经常感到自己处于被评判或被观察的状态？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=82, pid=1, stcontent=当你处于压力大的环境中，是否会感到身体出现不适，例如头晕或恶心？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=83, pid=1, stcontent=你是否在长时间独处时感到焦虑或不安？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=84, pid=1, stcontent=你是否经常感到自己不够好，害怕别人发现自己的缺点？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=85, pid=1, stcontent=当你不得不面对未知的事情时，是否常常感到恐惧或过度担忧？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=86, pid=1, stcontent=你是否会因为对失败的担心而避免尝试新事物？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=87, pid=1, stcontent=你是否觉得自己的情绪波动大，常常没有预兆地感到焦虑？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=88, pid=1, stcontent=当你面对新的社交场合时，你是否经常感到非常紧张或害怕？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=89, pid=1, stcontent=你是否会因为小小的不确定性或变化而感到焦虑或恐慌？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=90, pid=1, stcontent=你是否曾因无法控制的焦虑而影响到你的睡眠质量？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=91, pid=1, stcontent=当你思考某个问题时，是否总是想得过于复杂或担心最坏的结果？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=92, pid=1, stcontent=你是否会因为压力过大而经历肌肉紧张或不适？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=93, pid=1, stcontent=你是否在做决定时，总是非常担心自己做错选择？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=94, pid=1, stcontent=当你经历过一次焦虑发作时，是否经常担心它会再次发生？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=95, pid=1, stcontent=你是否容易被自己的负面情绪或想法所困扰，难以解脱？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=96, pid=1, stcontent=在经历压力时，你是否会有过食欲不振或暴饮暴食的情况？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=97, pid=1, stcontent=你是否觉得自己有时会因无缘无故的担忧而影响到日常生活？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"])]
+2025-04-19T11:54:16.084+08:00  INFO 7880 --- [http-nio-7070-exec-3] c.d.service.impl.QuestionsServiceImpl    : 转换后的VO对象：[QuestionsVo(id=67, pid=1, stcontent=你在日常生活中，是否经常感觉到莫名的不安或紧张？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=69, pid=1, stcontent=你是否经常感到自己无法控制情绪或压力？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=70, pid=1, stcontent=当你想到未来的事情时，是否会感到极度不安或担忧？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=71, pid=1, stcontent=你是否经常经历无法解释的胸闷或呼吸困难？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=72, pid=1, stcontent=你是否在面对挑战时常常感到自己无法应对？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=73, pid=1, stcontent=你是否发现自己经常为些许事情过度担心，难以集中注意力？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=74, pid=1, stcontent=当你遇到紧急或危险情况时，是否会感到极度的恐慌？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=75, pid=1, stcontent=你是否有过在社交场合中感到非常不自在或害怕被评价的经历？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=76, pid=1, stcontent=你是否有过由于担心而影响到你的日常生活或工作？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=77, pid=1, stcontent=你是否会因小事而情绪波动很大，容易失控？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=78, pid=1, stcontent=你是否经常感到无法放松，脑海中总有许多负面思维？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=79, pid=1, stcontent=在你遇到压力时，是否很容易产生焦虑或过度担忧？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=80, pid=1, stcontent=你是否觉得自己有时无法控制自己的焦虑感？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=81, pid=1, stcontent=你是否在与他人交往时，经常感到自己处于被评判或被观察的状态？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=82, pid=1, stcontent=当你处于压力大的环境中，是否会感到身体出现不适，例如头晕或恶心？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=83, pid=1, stcontent=你是否在长时间独处时感到焦虑或不安？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=84, pid=1, stcontent=你是否经常感到自己不够好，害怕别人发现自己的缺点？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=85, pid=1, stcontent=当你不得不面对未知的事情时，是否常常感到恐惧或过度担忧？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=86, pid=1, stcontent=你是否会因为对失败的担心而避免尝试新事物？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=87, pid=1, stcontent=你是否觉得自己的情绪波动大，常常没有预兆地感到焦虑？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=88, pid=1, stcontent=当你面对新的社交场合时，你是否经常感到非常紧张或害怕？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=89, pid=1, stcontent=你是否会因为小小的不确定性或变化而感到焦虑或恐慌？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=90, pid=1, stcontent=你是否曾因无法控制的焦虑而影响到你的睡眠质量？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=91, pid=1, stcontent=当你思考某个问题时，是否总是想得过于复杂或担心最坏的结果？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=92, pid=1, stcontent=你是否会因为压力过大而经历肌肉紧张或不适？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=93, pid=1, stcontent=你是否在做决定时，总是非常担心自己做错选择？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=94, pid=1, stcontent=当你经历过一次焦虑发作时，是否经常担心它会再次发生？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=95, pid=1, stcontent=你是否容易被自己的负面情绪或想法所困扰，难以解脱？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=96, pid=1, stcontent=在经历压力时，你是否会有过食欲不振或暴饮暴食的情况？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=97, pid=1, stcontent=你是否觉得自己有时会因无缘无故的担忧而影响到日常生活？, questiontype=1, stscore=5, options=["否", "是"])]
+2025-04-19T11:56:59.566+08:00  INFO 7880 --- [http-nio-7070-exec-8] c.d.service.impl.QuestionsServiceImpl    : 查询结果：[Questions(id=67, pid=1, stcontent=你在日常生活中，是否经常感觉到莫名的不安或紧张？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=69, pid=1, stcontent=你是否经常感到自己无法控制情绪或压力？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=70, pid=1, stcontent=当你想到未来的事情时，是否会感到极度不安或担忧？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=71, pid=1, stcontent=你是否经常经历无法解释的胸闷或呼吸困难？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=72, pid=1, stcontent=你是否在面对挑战时常常感到自己无法应对？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=73, pid=1, stcontent=你是否发现自己经常为些许事情过度担心，难以集中注意力？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=74, pid=1, stcontent=当你遇到紧急或危险情况时，是否会感到极度的恐慌？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=75, pid=1, stcontent=你是否有过在社交场合中感到非常不自在或害怕被评价的经历？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=76, pid=1, stcontent=你是否有过由于担心而影响到你的日常生活或工作？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=77, pid=1, stcontent=你是否会因小事而情绪波动很大，容易失控？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=78, pid=1, stcontent=你是否经常感到无法放松，脑海中总有许多负面思维？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=79, pid=1, stcontent=在你遇到压力时，是否很容易产生焦虑或过度担忧？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=80, pid=1, stcontent=你是否觉得自己有时无法控制自己的焦虑感？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=81, pid=1, stcontent=你是否在与他人交往时，经常感到自己处于被评判或被观察的状态？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=82, pid=1, stcontent=当你处于压力大的环境中，是否会感到身体出现不适，例如头晕或恶心？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=83, pid=1, stcontent=你是否在长时间独处时感到焦虑或不安？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=84, pid=1, stcontent=你是否经常感到自己不够好，害怕别人发现自己的缺点？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=85, pid=1, stcontent=当你不得不面对未知的事情时，是否常常感到恐惧或过度担忧？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=86, pid=1, stcontent=你是否会因为对失败的担心而避免尝试新事物？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=87, pid=1, stcontent=你是否觉得自己的情绪波动大，常常没有预兆地感到焦虑？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=88, pid=1, stcontent=当你面对新的社交场合时，你是否经常感到非常紧张或害怕？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=89, pid=1, stcontent=你是否会因为小小的不确定性或变化而感到焦虑或恐慌？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=90, pid=1, stcontent=你是否曾因无法控制的焦虑而影响到你的睡眠质量？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=91, pid=1, stcontent=当你思考某个问题时，是否总是想得过于复杂或担心最坏的结果？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=92, pid=1, stcontent=你是否会因为压力过大而经历肌肉紧张或不适？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=93, pid=1, stcontent=你是否在做决定时，总是非常担心自己做错选择？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=94, pid=1, stcontent=当你经历过一次焦虑发作时，是否经常担心它会再次发生？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=95, pid=1, stcontent=你是否容易被自己的负面情绪或想法所困扰，难以解脱？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=96, pid=1, stcontent=在经历压力时，你是否会有过食欲不振或暴饮暴食的情况？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"]), Questions(id=97, pid=1, stcontent=你是否觉得自己有时会因无缘无故的担忧而影响到日常生活？, questiontype=1, stscore=5, stanswer=是, options=["否", "是"])]
+2025-04-19T11:56:59.568+08:00  INFO 7880 --- [http-nio-7070-exec-8] c.d.service.impl.QuestionsServiceImpl    : 转换后的VO对象：[QuestionsVo(id=67, pid=1, stcontent=你在日常生活中，是否经常感觉到莫名的不安或紧张？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=69, pid=1, stcontent=你是否经常感到自己无法控制情绪或压力？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=70, pid=1, stcontent=当你想到未来的事情时，是否会感到极度不安或担忧？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=71, pid=1, stcontent=你是否经常经历无法解释的胸闷或呼吸困难？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=72, pid=1, stcontent=你是否在面对挑战时常常感到自己无法应对？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=73, pid=1, stcontent=你是否发现自己经常为些许事情过度担心，难以集中注意力？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=74, pid=1, stcontent=当你遇到紧急或危险情况时，是否会感到极度的恐慌？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=75, pid=1, stcontent=你是否有过在社交场合中感到非常不自在或害怕被评价的经历？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=76, pid=1, stcontent=你是否有过由于担心而影响到你的日常生活或工作？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=77, pid=1, stcontent=你是否会因小事而情绪波动很大，容易失控？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=78, pid=1, stcontent=你是否经常感到无法放松，脑海中总有许多负面思维？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=79, pid=1, stcontent=在你遇到压力时，是否很容易产生焦虑或过度担忧？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=80, pid=1, stcontent=你是否觉得自己有时无法控制自己的焦虑感？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=81, pid=1, stcontent=你是否在与他人交往时，经常感到自己处于被评判或被观察的状态？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=82, pid=1, stcontent=当你处于压力大的环境中，是否会感到身体出现不适，例如头晕或恶心？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=83, pid=1, stcontent=你是否在长时间独处时感到焦虑或不安？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=84, pid=1, stcontent=你是否经常感到自己不够好，害怕别人发现自己的缺点？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=85, pid=1, stcontent=当你不得不面对未知的事情时，是否常常感到恐惧或过度担忧？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=86, pid=1, stcontent=你是否会因为对失败的担心而避免尝试新事物？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=87, pid=1, stcontent=你是否觉得自己的情绪波动大，常常没有预兆地感到焦虑？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=88, pid=1, stcontent=当你面对新的社交场合时，你是否经常感到非常紧张或害怕？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=89, pid=1, stcontent=你是否会因为小小的不确定性或变化而感到焦虑或恐慌？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=90, pid=1, stcontent=你是否曾因无法控制的焦虑而影响到你的睡眠质量？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=91, pid=1, stcontent=当你思考某个问题时，是否总是想得过于复杂或担心最坏的结果？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=92, pid=1, stcontent=你是否会因为压力过大而经历肌肉紧张或不适？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=93, pid=1, stcontent=你是否在做决定时，总是非常担心自己做错选择？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=94, pid=1, stcontent=当你经历过一次焦虑发作时，是否经常担心它会再次发生？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=95, pid=1, stcontent=你是否容易被自己的负面情绪或想法所困扰，难以解脱？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=96, pid=1, stcontent=在经历压力时，你是否会有过食欲不振或暴饮暴食的情况？, questiontype=1, stscore=5, options=["否", "是"]), QuestionsVo(id=97, pid=1, stcontent=你是否觉得自己有时会因无缘无故的担忧而影响到日常生活？, questiontype=1, stscore=5, options=["否", "是"])]
+2025-04-19T11:58:44.161+08:00  WARN 7880 --- [Thread-16] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+2025-04-19T11:58:44.161+08:00  WARN 7880 --- [Thread-1] c.a.n.common.executor.ThreadPoolManager  : [ThreadPoolManager] Start destroying ThreadPool
+2025-04-19T11:58:44.161+08:00  WARN 7880 --- [Thread-16] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+2025-04-19T11:58:44.161+08:00  WARN 7880 --- [Thread-1] c.a.n.common.executor.ThreadPoolManager  : [ThreadPoolManager] Destruction of the end
+2025-04-19T11:58:44.166+08:00  WARN 7880 --- [Thread-14] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+2025-04-19T11:58:44.169+08:00  WARN 7880 --- [Thread-14] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+2025-04-19T11:58:44.340+08:00  INFO 7880 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2025-04-19T11:58:44.344+08:00  INFO 7880 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2025-04-19T17:37:12.448+08:00  INFO 17124 --- [main] c.a.nacos.client.logging.NacosLogging    : Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback12.LogbackNacosLoggingAdapterBuilder
+2025-04-19T17:37:12.455+08:00  INFO 17124 --- [main] c.a.nacos.client.logging.NacosLogging    : Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapterBuilder
+2025-04-19T17:37:12.456+08:00  INFO 17124 --- [main] c.a.nacos.client.logging.NacosLogging    : Nacos Logging Adapter: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapter match ch.qos.logback.classic.Logger success.
+2025-04-19T17:37:12.468+08:00  INFO 17124 --- [main] c.a.nacos.client.logging.NacosLogging    : Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.log4j2.Log4j2NacosLoggingAdapterBuilder
+2025-04-19T17:37:12.629+08:00  INFO 17124 --- [main] com.drip.ForeverApplication              : Starting ForeverApplication using Java 17.0.7 with PID 17124 (D:\IdeaProject\YueDong-Forever\target\classes started by qq316 in D:\IdeaProject\YueDong-Forever)
+2025-04-19T17:37:12.631+08:00  INFO 17124 --- [main] com.drip.ForeverApplication              : No active profile set, falling back to 1 default profile: "default"
+2025-04-19T17:37:14.150+08:00  INFO 17124 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-04-19T17:37:14.156+08:00  INFO 17124 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-04-19T17:37:14.208+08:00  INFO 17124 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 0 Redis repository interfaces.
+2025-04-19T17:37:14.591+08:00  WARN 17124 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.nacos.NacosConfigAutoConfiguration' of type [com.alibaba.cloud.nacos.NacosConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [nacosAnnotationProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-04-19T17:37:14.602+08:00  WARN 17124 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'nacosConfigProperties' of type [com.alibaba.cloud.nacos.NacosConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [nacosAnnotationProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-04-19T17:37:14.732+08:00  INFO 17124 --- [main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2025-04-19T17:37:14.732+08:00  INFO 17124 --- [main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2025-04-19T17:37:14.736+08:00  WARN 17124 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'nacosConfigManager' of type [com.alibaba.cloud.nacos.NacosConfigManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [nacosAnnotationProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-04-19T17:37:15.525+08:00  INFO 17124 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7070 (http)
+2025-04-19T17:37:15.553+08:00  INFO 17124 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-19T17:37:15.554+08:00  INFO 17124 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-04-19T17:37:15.707+08:00  INFO 17124 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-19T17:37:15.709+08:00  INFO 17124 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3002 ms
+2025-04-19T17:37:15.928+08:00  INFO 17124 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2025-04-19T17:37:16.102+08:00  INFO 17124 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2025-04-19T17:37:21.090+08:00  INFO 17124 --- [main] c.a.c.n.a.NacosAnnotationProcessor       : [Nacos Config] Listening config for annotation: dataId=spring.ai.alibaba.configurable.prompt, group=DEFAULT_GROUP
+2025-04-19T17:37:21.104+08:00  INFO 17124 --- [main] c.a.c.n.a.NacosAnnotationProcessor       : [Nacos Config] register configurablePromptTemplateFactory#method#onConfigChange(List) listener on com.alibaba.cloud.ai.prompt.ConfigurablePromptTemplateFactory@4d5d945d 
+2025-04-19T17:37:21.485+08:00  INFO 17124 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7070 (http) with context path ''
+2025-04-19T17:37:21.502+08:00  INFO 17124 --- [main] com.drip.ForeverApplication              : Started ForeverApplication in 9.799 seconds (process running for 11.09)
+2025-04-19T17:37:24.013+08:00  INFO 17124 --- [http-nio-7070-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-19T17:37:24.013+08:00  INFO 17124 --- [http-nio-7070-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-19T17:37:24.013+08:00  INFO 17124 --- [http-nio-7070-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-04-19T17:46:58.492+08:00  WARN 17124 --- [http-nio-7070-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Failure in @ExceptionHandler com.drip.exception.GlobalExceptionHandler#handlerException(Exception)
+
+org.springframework.web.HttpMediaTypeNotAcceptableException: No acceptable representation
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:256) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.handleReturnValue(RequestResponseBodyMethodProcessor.java:192) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:78) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:136) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException(ExceptionHandlerExceptionResolver.java:432) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodExceptionResolver.doResolveException(AbstractHandlerMethodExceptionResolver.java:74) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:175) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.handler.HandlerExceptionResolverComposite.resolveException(HandlerExceptionResolverComposite.java:80) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1357) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1160) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at cn.dev33.satoken.filter.SaPathCheckFilterForJakartaServlet.doFilter(SaPathCheckFilterForJakartaServlet.java:55) ~[sa-token-spring-boot3-starter-1.38.0.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2025-04-19T17:46:58.492+08:00 ERROR 17124 --- [http-nio-7070-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.QueryTimeoutException: Redis command timed out] with root cause
+
+io.lettuce.core.RedisCommandTimeoutException: Command timed out after 10 second(s)
+	at io.lettuce.core.internal.ExceptionFactory.createTimeoutException(ExceptionFactory.java:59) ~[lettuce-core-6.3.2.RELEASE.jar:6.3.2.RELEASE/8941aea]
+	at io.lettuce.core.internal.Futures.awaitOrCancel(Futures.java:246) ~[lettuce-core-6.3.2.RELEASE.jar:6.3.2.RELEASE/8941aea]
+	at io.lettuce.core.LettuceFutures.awaitOrCancel(LettuceFutures.java:74) ~[lettuce-core-6.3.2.RELEASE.jar:6.3.2.RELEASE/8941aea]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.await(LettuceConnection.java:1024) ~[spring-data-redis-3.2.5.jar:3.2.5]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.lambda$doInvoke$3(LettuceConnection.java:445) ~[spring-data-redis-3.2.5.jar:3.2.5]
+	at org.springframework.data.redis.connection.lettuce.LettuceInvoker$Synchronizer.invoke(LettuceInvoker.java:665) ~[spring-data-redis-3.2.5.jar:3.2.5]
+	at org.springframework.data.redis.connection.lettuce.LettuceInvoker.just(LettuceInvoker.java:94) ~[spring-data-redis-3.2.5.jar:3.2.5]
+	at org.springframework.data.redis.connection.lettuce.LettuceStringCommands.get(LettuceStringCommands.java:54) ~[spring-data-redis-3.2.5.jar:3.2.5]
+	at org.springframework.data.redis.connection.DefaultedRedisConnection.get(DefaultedRedisConnection.java:284) ~[spring-data-redis-3.2.5.jar:3.2.5]
+	at org.springframework.data.redis.connection.DefaultStringRedisConnection.get(DefaultStringRedisConnection.java:382) ~[spring-data-redis-3.2.5.jar:3.2.5]
+	at org.springframework.data.redis.core.DefaultValueOperations$1.inRedis(DefaultValueOperations.java:54) ~[spring-data-redis-3.2.5.jar:3.2.5]
+	at org.springframework.data.redis.core.AbstractOperations$ValueDeserializingRedisCallback.doInRedis(AbstractOperations.java:61) ~[spring-data-redis-3.2.5.jar:3.2.5]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:396) ~[spring-data-redis-3.2.5.jar:3.2.5]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:363) ~[spring-data-redis-3.2.5.jar:3.2.5]
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:97) ~[spring-data-redis-3.2.5.jar:3.2.5]
+	at org.springframework.data.redis.core.DefaultValueOperations.get(DefaultValueOperations.java:50) ~[spring-data-redis-3.2.5.jar:3.2.5]
+	at cn.dev33.satoken.dao.SaTokenDaoRedisJackson.get(SaTokenDaoRedisJackson.java:162) ~[sa-token-redis-jackson-1.38.0.jar:na]
+	at cn.dev33.satoken.stp.StpLogic.getLoginIdNotHandle(StpLogic.java:1094) ~[sa-token-core-1.38.0.jar:na]
+	at cn.dev33.satoken.stp.StpLogic.getLoginIdByToken(StpLogic.java:1078) ~[sa-token-core-1.38.0.jar:na]
+	at cn.dev33.satoken.stp.StpUtil.getLoginIdByToken(StpUtil.java:397) ~[sa-token-core-1.38.0.jar:na]
+	at com.drip.controller.AIController.generateStreamAsString(AIController.java:81) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at cn.dev33.satoken.filter.SaPathCheckFilterForJakartaServlet.doFilter(SaPathCheckFilterForJakartaServlet.java:55) ~[sa-token-spring-boot3-starter-1.38.0.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2025-04-19T17:47:04.234+08:00  INFO 17124 --- [lettuce-eventExecutorLoop-1-2] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was /106.63.5.239:6379
+2025-04-19T17:47:04.285+08:00  INFO 17124 --- [lettuce-nioEventLoop-4-2] i.l.core.protocol.ReconnectionHandler    : Reconnected to 106.63.5.239/<unresolved>:6379
+2025-04-19T17:47:23.522+08:00 ERROR 17124 --- [ForkJoinPool.commonPool-worker-2] o.s.ai.chat.model.MessageAggregator      : Aggregation Error
+
+org.springframework.web.reactive.function.client.WebClientRequestException: Connection reset
+	at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:136) ~[spring-webflux-6.1.6.jar:6.1.6]
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ Request to POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation [DefaultWebClient]
+Original Stack Trace:
+		at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:136) ~[spring-webflux-6.1.6.jar:6.1.6]
+		at reactor.core.publisher.MonoErrorSupplied.subscribe(MonoErrorSupplied.java:55) ~[reactor-core-3.6.5.jar:3.6.5]
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4568) ~[reactor-core-3.6.5.jar:3.6.5]
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:103) ~[reactor-core-3.6.5.jar:3.6.5]
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222) ~[reactor-core-3.6.5.jar:3.6.5]
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222) ~[reactor-core-3.6.5.jar:3.6.5]
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onError(MonoIgnoreThen.java:280) ~[reactor-core-3.6.5.jar:3.6.5]
+		at reactor.core.publisher.FluxMap$MapSubscriber.onError(FluxMap.java:134) ~[reactor-core-3.6.5.jar:3.6.5]
+		at reactor.core.publisher.MonoCompletionStage$MonoCompletionStageSubscription.apply(MonoCompletionStage.java:115) ~[reactor-core-3.6.5.jar:3.6.5]
+		at reactor.core.publisher.MonoCompletionStage$MonoCompletionStageSubscription.apply(MonoCompletionStage.java:67) ~[reactor-core-3.6.5.jar:3.6.5]
+		at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934) ~[na:na]
+		at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911) ~[na:na]
+		at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510) ~[na:na]
+		at java.base/java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:614) ~[na:na]
+		at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:844) ~[na:na]
+		at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:483) ~[na:na]
+		at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373) ~[na:na]
+		at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182) ~[na:na]
+		at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) ~[na:na]
+		at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[na:na]
+		at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[na:na]
+Caused by: java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426) ~[na:na]
+	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1170) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:833) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:774) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:957) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:979) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:934) ~[java.net.http:na]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:934) ~[java.net.http:na]
+
+2025-04-19T17:47:23.522+08:00 ERROR 17124 --- [ForkJoinPool.commonPool-worker-3] o.s.ai.chat.model.MessageAggregator      : Aggregation Error
+
+org.springframework.web.reactive.function.client.WebClientRequestException: Connection reset
+	at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:136) ~[spring-webflux-6.1.6.jar:6.1.6]
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ Request to POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation [DefaultWebClient]
+Original Stack Trace:
+		at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:136) ~[spring-webflux-6.1.6.jar:6.1.6]
+		at reactor.core.publisher.MonoErrorSupplied.subscribe(MonoErrorSupplied.java:55) ~[reactor-core-3.6.5.jar:3.6.5]
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4568) ~[reactor-core-3.6.5.jar:3.6.5]
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:103) ~[reactor-core-3.6.5.jar:3.6.5]
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222) ~[reactor-core-3.6.5.jar:3.6.5]
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222) ~[reactor-core-3.6.5.jar:3.6.5]
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onError(MonoIgnoreThen.java:280) ~[reactor-core-3.6.5.jar:3.6.5]
+		at reactor.core.publisher.FluxMap$MapSubscriber.onError(FluxMap.java:134) ~[reactor-core-3.6.5.jar:3.6.5]
+		at reactor.core.publisher.MonoCompletionStage$MonoCompletionStageSubscription.apply(MonoCompletionStage.java:115) ~[reactor-core-3.6.5.jar:3.6.5]
+		at reactor.core.publisher.MonoCompletionStage$MonoCompletionStageSubscription.apply(MonoCompletionStage.java:67) ~[reactor-core-3.6.5.jar:3.6.5]
+		at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934) ~[na:na]
+		at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911) ~[na:na]
+		at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510) ~[na:na]
+		at java.base/java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:614) ~[na:na]
+		at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:844) ~[na:na]
+		at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:483) ~[na:na]
+		at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373) ~[na:na]
+		at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182) ~[na:na]
+		at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) ~[na:na]
+		at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[na:na]
+		at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[na:na]
+Caused by: java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426) ~[na:na]
+	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1170) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:833) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:774) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:957) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:979) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:934) ~[java.net.http:na]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:934) ~[java.net.http:na]
+
+2025-04-19T17:47:23.524+08:00 ERROR 17124 --- [ForkJoinPool.commonPool-worker-3] o.s.ai.chat.model.MessageAggregator      : Aggregation Error
+
+org.springframework.web.reactive.function.client.WebClientRequestException: Connection reset
+	at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:136) ~[spring-webflux-6.1.6.jar:6.1.6]
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ Request to POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation [DefaultWebClient]
+Original Stack Trace:
+		at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:136) ~[spring-webflux-6.1.6.jar:6.1.6]
+		at reactor.core.publisher.MonoErrorSupplied.subscribe(MonoErrorSupplied.java:55) ~[reactor-core-3.6.5.jar:3.6.5]
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4568) ~[reactor-core-3.6.5.jar:3.6.5]
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:103) ~[reactor-core-3.6.5.jar:3.6.5]
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222) ~[reactor-core-3.6.5.jar:3.6.5]
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222) ~[reactor-core-3.6.5.jar:3.6.5]
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onError(MonoIgnoreThen.java:280) ~[reactor-core-3.6.5.jar:3.6.5]
+		at reactor.core.publisher.FluxMap$MapSubscriber.onError(FluxMap.java:134) ~[reactor-core-3.6.5.jar:3.6.5]
+		at reactor.core.publisher.MonoCompletionStage$MonoCompletionStageSubscription.apply(MonoCompletionStage.java:115) ~[reactor-core-3.6.5.jar:3.6.5]
+		at reactor.core.publisher.MonoCompletionStage$MonoCompletionStageSubscription.apply(MonoCompletionStage.java:67) ~[reactor-core-3.6.5.jar:3.6.5]
+		at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934) ~[na:na]
+		at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911) ~[na:na]
+		at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510) ~[na:na]
+		at java.base/java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:614) ~[na:na]
+		at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:844) ~[na:na]
+		at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:483) ~[na:na]
+		at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373) ~[na:na]
+		at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182) ~[na:na]
+		at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) ~[na:na]
+		at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[na:na]
+		at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[na:na]
+Caused by: java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426) ~[na:na]
+	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1170) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:833) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:774) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:957) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:979) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:934) ~[java.net.http:na]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:934) ~[java.net.http:na]
+
+2025-04-19T17:47:23.524+08:00 ERROR 17124 --- [ForkJoinPool.commonPool-worker-2] o.s.ai.chat.model.MessageAggregator      : Aggregation Error
+
+org.springframework.web.reactive.function.client.WebClientRequestException: Connection reset
+	at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:136) ~[spring-webflux-6.1.6.jar:6.1.6]
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ Request to POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation [DefaultWebClient]
+Original Stack Trace:
+		at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:136) ~[spring-webflux-6.1.6.jar:6.1.6]
+		at reactor.core.publisher.MonoErrorSupplied.subscribe(MonoErrorSupplied.java:55) ~[reactor-core-3.6.5.jar:3.6.5]
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4568) ~[reactor-core-3.6.5.jar:3.6.5]
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:103) ~[reactor-core-3.6.5.jar:3.6.5]
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222) ~[reactor-core-3.6.5.jar:3.6.5]
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222) ~[reactor-core-3.6.5.jar:3.6.5]
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onError(MonoIgnoreThen.java:280) ~[reactor-core-3.6.5.jar:3.6.5]
+		at reactor.core.publisher.FluxMap$MapSubscriber.onError(FluxMap.java:134) ~[reactor-core-3.6.5.jar:3.6.5]
+		at reactor.core.publisher.MonoCompletionStage$MonoCompletionStageSubscription.apply(MonoCompletionStage.java:115) ~[reactor-core-3.6.5.jar:3.6.5]
+		at reactor.core.publisher.MonoCompletionStage$MonoCompletionStageSubscription.apply(MonoCompletionStage.java:67) ~[reactor-core-3.6.5.jar:3.6.5]
+		at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934) ~[na:na]
+		at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911) ~[na:na]
+		at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510) ~[na:na]
+		at java.base/java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:614) ~[na:na]
+		at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:844) ~[na:na]
+		at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:483) ~[na:na]
+		at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373) ~[na:na]
+		at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182) ~[na:na]
+		at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) ~[na:na]
+		at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[na:na]
+		at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[na:na]
+Caused by: java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426) ~[na:na]
+	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1170) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:833) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:774) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:957) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:979) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:934) ~[java.net.http:na]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:934) ~[java.net.http:na]
+
+2025-04-19T17:47:23.528+08:00  WARN 17124 --- [http-nio-7070-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Failure in @ExceptionHandler com.drip.exception.GlobalExceptionHandler#handlerException(Exception)
+
+org.springframework.web.HttpMediaTypeNotAcceptableException: No acceptable representation
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:256) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.handleReturnValue(RequestResponseBodyMethodProcessor.java:192) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:78) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:136) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException(ExceptionHandlerExceptionResolver.java:432) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodExceptionResolver.doResolveException(AbstractHandlerMethodExceptionResolver.java:74) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:175) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.handler.HandlerExceptionResolverComposite.resolveException(HandlerExceptionResolverComposite.java:80) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1357) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1160) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:653) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationDispatcher.doDispatch(ApplicationDispatcher.java:581) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationDispatcher.dispatch(ApplicationDispatcher.java:552) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.AsyncContextImpl$AsyncRunnable.run(AsyncContextImpl.java:585) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.AsyncContextImpl.doInternalDispatch(AsyncContextImpl.java:344) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.connector.CoyoteAdapter.asyncDispatch(CoyoteAdapter.java:239) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProcessor.dispatch(AbstractProcessor.java:243) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:57) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2025-04-19T17:47:23.528+08:00  WARN 17124 --- [http-nio-7070-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Failure in @ExceptionHandler com.drip.exception.GlobalExceptionHandler#handlerException(Exception)
+
+org.springframework.web.HttpMediaTypeNotAcceptableException: No acceptable representation
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:256) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.handleReturnValue(RequestResponseBodyMethodProcessor.java:192) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:78) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:136) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException(ExceptionHandlerExceptionResolver.java:432) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodExceptionResolver.doResolveException(AbstractHandlerMethodExceptionResolver.java:74) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:175) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.handler.HandlerExceptionResolverComposite.resolveException(HandlerExceptionResolverComposite.java:80) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1357) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1160) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:653) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationDispatcher.doDispatch(ApplicationDispatcher.java:581) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationDispatcher.dispatch(ApplicationDispatcher.java:552) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.AsyncContextImpl$AsyncRunnable.run(AsyncContextImpl.java:585) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.AsyncContextImpl.doInternalDispatch(AsyncContextImpl.java:344) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.connector.CoyoteAdapter.asyncDispatch(CoyoteAdapter.java:239) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProcessor.dispatch(AbstractProcessor.java:243) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:57) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2025-04-19T17:47:23.529+08:00 ERROR 17124 --- [http-nio-7070-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] threw exception
+
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426) ~[na:na]
+	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1170) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:833) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:774) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:957) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:979) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:934) ~[java.net.http:na]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:934) ~[java.net.http:na]
+
+2025-04-19T17:47:23.529+08:00 ERROR 17124 --- [http-nio-7070-exec-8] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] threw exception
+
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426) ~[na:na]
+	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1170) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:833) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:774) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:957) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:979) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:934) ~[java.net.http:na]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:934) ~[java.net.http:na]
+
+2025-04-19T17:47:23.530+08:00 ERROR 17124 --- [http-nio-7070-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.web.reactive.function.client.WebClientRequestException: Connection reset] with root cause
+
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426) ~[na:na]
+	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1170) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:833) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:774) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:957) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:979) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:934) ~[java.net.http:na]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:934) ~[java.net.http:na]
+
+2025-04-19T17:47:23.530+08:00 ERROR 17124 --- [http-nio-7070-exec-8] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.web.reactive.function.client.WebClientRequestException: Connection reset] with root cause
+
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426) ~[na:na]
+	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1170) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:833) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:774) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:957) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:979) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:934) ~[java.net.http:na]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:934) ~[java.net.http:na]
+
+2025-04-19T18:09:34.627+08:00  INFO 17124 --- [lettuce-eventExecutorLoop-1-3] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was /106.63.5.239:6379
+2025-04-19T18:09:34.675+08:00  INFO 17124 --- [lettuce-nioEventLoop-4-3] i.l.core.protocol.ReconnectionHandler    : Reconnected to 106.63.5.239/<unresolved>:6379
+2025-04-19T19:38:55.804+08:00  INFO 17124 --- [lettuce-nioEventLoop-4-3] i.lettuce.core.protocol.CommandHandler   : null Unexpected exception during request: java.net.SocketException: Connection reset
+
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426) ~[na:na]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:255) ~[netty-buffer-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-buffer-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357) ~[netty-transport-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151) ~[netty-transport-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.109.Final.jar:4.1.109.Final]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2025-04-19T19:38:55.874+08:00  INFO 17124 --- [lettuce-eventExecutorLoop-1-4] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was /106.63.5.239:6379
+2025-04-19T19:38:55.884+08:00  WARN 17124 --- [lettuce-nioEventLoop-4-4] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [106.63.5.239/<unresolved>:6379]: Network is unreachable: no further information: /106.63.5.239:6379
+
+io.netty.channel.AbstractChannel$AnnotatedSocketException: Network is unreachable: no further information: /106.63.5.239:6379
+Caused by: java.net.SocketException: Network is unreachable: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946) ~[na:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337) ~[netty-transport-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:339) ~[netty-transport-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776) ~[netty-transport-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.109.Final.jar:4.1.109.Final]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2025-04-19T19:39:15.029+08:00  INFO 17124 --- [lettuce-eventExecutorLoop-1-12] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 106.63.5.239/<unresolved>:6379
+2025-04-19T19:39:25.099+08:00  WARN 17124 --- [lettuce-nioEventLoop-4-16] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [106.63.5.239/<unresolved>:6379]: connection timed out after 10000 ms: /106.63.5.239:6379
+2025-04-19T19:39:33.326+08:00  INFO 17124 --- [lettuce-eventExecutorLoop-1-14] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 106.63.5.239/<unresolved>:6379
+2025-04-19T19:39:43.340+08:00  WARN 17124 --- [lettuce-nioEventLoop-4-1] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [106.63.5.239/<unresolved>:6379]: connection timed out after 10000 ms: /106.63.5.239:6379
+2025-04-19T19:39:59.830+08:00  INFO 17124 --- [lettuce-eventExecutorLoop-1-1] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 106.63.5.239/<unresolved>:6379
+2025-04-19T19:40:02.897+08:00  WARN 17124 --- [lettuce-nioEventLoop-4-2] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [106.63.5.239/<unresolved>:6379]: Software caused connection abort: no further information: /106.63.5.239:6379
+
+io.netty.channel.AbstractChannel$AnnotatedSocketException: Software caused connection abort: no further information: /106.63.5.239:6379
+Caused by: java.net.SocketException: Software caused connection abort: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946) ~[na:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337) ~[netty-transport-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:339) ~[netty-transport-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776) ~[netty-transport-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.109.Final.jar:4.1.109.Final]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2025-04-19T19:40:32.924+08:00  INFO 17124 --- [lettuce-eventExecutorLoop-1-2] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 106.63.5.239/<unresolved>:6379
+2025-04-19T19:40:33.237+08:00  INFO 17124 --- [lettuce-nioEventLoop-4-3] i.l.core.protocol.ReconnectionHandler    : Reconnected to 106.63.5.239/<unresolved>:6379
+2025-04-19T20:16:39.047+08:00  INFO 17124 --- [lettuce-nioEventLoop-4-3] i.lettuce.core.protocol.CommandHandler   : null Unexpected exception during request: java.net.SocketException: Connection reset
+
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426) ~[na:na]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:255) ~[netty-buffer-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-buffer-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357) ~[netty-transport-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151) ~[netty-transport-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.109.Final.jar:4.1.109.Final]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2025-04-19T20:16:39.131+08:00  INFO 17124 --- [lettuce-eventExecutorLoop-1-3] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was /106.63.5.239:6379
+2025-04-19T20:16:39.255+08:00  INFO 17124 --- [lettuce-nioEventLoop-4-4] i.l.core.protocol.ReconnectionHandler    : Reconnected to 106.63.5.239/<unresolved>:6379
+2025-04-19T23:54:59.138+08:00  WARN 17124 --- [Thread-14] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+2025-04-19T23:54:59.137+08:00  WARN 17124 --- [Thread-16] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+2025-04-19T23:54:59.137+08:00  WARN 17124 --- [Thread-1] c.a.n.common.executor.ThreadPoolManager  : [ThreadPoolManager] Start destroying ThreadPool
+2025-04-19T23:54:59.142+08:00  WARN 17124 --- [Thread-16] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+2025-04-19T23:54:59.144+08:00  WARN 17124 --- [Thread-1] c.a.n.common.executor.ThreadPoolManager  : [ThreadPoolManager] Destruction of the end
+2025-04-19T23:54:59.173+08:00  WARN 17124 --- [Thread-14] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+2025-04-19T23:54:59.892+08:00  INFO 17124 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2025-04-19T23:54:59.901+08:00  INFO 17124 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed

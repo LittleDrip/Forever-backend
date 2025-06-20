@@ -30,4 +30,10 @@ public class PostsController {
         return Result.ok(postsService.list());
     }
 
+//    根据id获取
+    @GetMapping("/get/{id}")
+    public Result<Posts> getPostsById(@PathVariable Integer id){
+        return Result.ok(postsService.getById(id));
+    }
+
 }

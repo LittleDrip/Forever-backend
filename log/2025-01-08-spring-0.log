@@ -1,0 +1,216 @@
+2025-01-08T11:01:41.268+08:00  INFO 19472 --- [main] c.a.nacos.client.logging.NacosLogging    : Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback12.LogbackNacosLoggingAdapterBuilder
+2025-01-08T11:01:41.274+08:00  INFO 19472 --- [main] c.a.nacos.client.logging.NacosLogging    : Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapterBuilder
+2025-01-08T11:01:41.275+08:00  INFO 19472 --- [main] c.a.nacos.client.logging.NacosLogging    : Nacos Logging Adapter: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapter match ch.qos.logback.classic.Logger success.
+2025-01-08T11:01:41.282+08:00  INFO 19472 --- [main] c.a.nacos.client.logging.NacosLogging    : Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.log4j2.Log4j2NacosLoggingAdapterBuilder
+2025-01-08T11:01:41.406+08:00  INFO 19472 --- [main] com.drip.ForeverApplication              : Starting ForeverApplication using Java 17.0.7 with PID 19472 (D:\IdeaProject\YueDong-Forever\target\classes started by qq316 in D:\IdeaProject\YueDong-Forever)
+2025-01-08T11:01:41.407+08:00  INFO 19472 --- [main] com.drip.ForeverApplication              : No active profile set, falling back to 1 default profile: "default"
+2025-01-08T11:01:42.442+08:00  INFO 19472 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-01-08T11:01:42.453+08:00  INFO 19472 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-01-08T11:01:42.491+08:00  INFO 19472 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+2025-01-08T11:01:42.734+08:00  WARN 19472 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.nacos.NacosConfigAutoConfiguration' of type [com.alibaba.cloud.nacos.NacosConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [nacosAnnotationProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-01-08T11:01:42.741+08:00  WARN 19472 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'nacosConfigProperties' of type [com.alibaba.cloud.nacos.NacosConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [nacosAnnotationProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-01-08T11:01:42.837+08:00  INFO 19472 --- [main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2025-01-08T11:01:42.837+08:00  INFO 19472 --- [main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2025-01-08T11:01:42.838+08:00  WARN 19472 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'nacosConfigManager' of type [com.alibaba.cloud.nacos.NacosConfigManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [nacosAnnotationProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-01-08T11:01:43.233+08:00  INFO 19472 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7070 (http)
+2025-01-08T11:01:43.252+08:00  INFO 19472 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-08T11:01:43.252+08:00  INFO 19472 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-01-08T11:01:43.347+08:00  INFO 19472 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-08T11:01:43.348+08:00  INFO 19472 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1892 ms
+2025-01-08T11:01:43.468+08:00  INFO 19472 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2025-01-08T11:01:43.572+08:00  INFO 19472 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2025-01-08T11:01:46.704+08:00  INFO 19472 --- [main] c.a.c.n.a.NacosAnnotationProcessor       : [Nacos Config] Listening config for annotation: dataId=spring.ai.alibaba.configurable.prompt, group=DEFAULT_GROUP
+2025-01-08T11:01:46.714+08:00  INFO 19472 --- [main] c.a.c.n.a.NacosAnnotationProcessor       : [Nacos Config] register configurablePromptTemplateFactory#method#onConfigChange(List) listener on com.alibaba.cloud.ai.prompt.ConfigurablePromptTemplateFactory@74471600 
+2025-01-08T11:01:46.980+08:00  INFO 19472 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7070 (http) with context path ''
+2025-01-08T11:01:46.991+08:00  INFO 19472 --- [main] com.drip.ForeverApplication              : Started ForeverApplication in 6.267 seconds (process running for 7.247)
+2025-01-08T11:01:52.941+08:00  INFO 19472 --- [http-nio-7070-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-08T11:01:52.941+08:00  INFO 19472 --- [http-nio-7070-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-01-08T11:01:52.943+08:00  INFO 19472 --- [http-nio-7070-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-01-08T11:23:33.100+08:00  WARN 19472 --- [Thread-1] c.a.n.common.executor.ThreadPoolManager  : [ThreadPoolManager] Start destroying ThreadPool
+2025-01-08T11:23:33.100+08:00  WARN 19472 --- [Thread-16] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+2025-01-08T11:23:33.100+08:00  WARN 19472 --- [Thread-14] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+2025-01-08T11:23:33.100+08:00  WARN 19472 --- [Thread-16] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+2025-01-08T11:23:33.101+08:00  WARN 19472 --- [Thread-1] c.a.n.common.executor.ThreadPoolManager  : [ThreadPoolManager] Destruction of the end
+2025-01-08T11:23:33.102+08:00  WARN 19472 --- [Thread-14] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+2025-01-08T11:23:33.270+08:00  INFO 19472 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2025-01-08T11:23:33.329+08:00  INFO 19472 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2025-01-08T11:23:40.207+08:00  INFO 15940 --- [main] c.a.nacos.client.logging.NacosLogging    : Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback12.LogbackNacosLoggingAdapterBuilder
+2025-01-08T11:23:40.210+08:00  INFO 15940 --- [main] c.a.nacos.client.logging.NacosLogging    : Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapterBuilder
+2025-01-08T11:23:40.212+08:00  INFO 15940 --- [main] c.a.nacos.client.logging.NacosLogging    : Nacos Logging Adapter: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapter match ch.qos.logback.classic.Logger success.
+2025-01-08T11:23:40.222+08:00  INFO 15940 --- [main] c.a.nacos.client.logging.NacosLogging    : Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.log4j2.Log4j2NacosLoggingAdapterBuilder
+2025-01-08T11:23:40.318+08:00  INFO 15940 --- [main] com.drip.ForeverApplication              : Starting ForeverApplication using Java 17.0.7 with PID 15940 (D:\IdeaProject\YueDong-Forever\target\classes started by qq316 in D:\IdeaProject\YueDong-Forever)
+2025-01-08T11:23:40.318+08:00  INFO 15940 --- [main] com.drip.ForeverApplication              : No active profile set, falling back to 1 default profile: "default"
+2025-01-08T11:23:41.074+08:00  INFO 15940 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-01-08T11:23:41.076+08:00  INFO 15940 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-01-08T11:23:41.100+08:00  INFO 15940 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2025-01-08T11:23:41.294+08:00  WARN 15940 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.nacos.NacosConfigAutoConfiguration' of type [com.alibaba.cloud.nacos.NacosConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [nacosAnnotationProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-01-08T11:23:41.300+08:00  WARN 15940 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'nacosConfigProperties' of type [com.alibaba.cloud.nacos.NacosConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [nacosAnnotationProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-01-08T11:23:41.380+08:00  INFO 15940 --- [main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2025-01-08T11:23:41.380+08:00  INFO 15940 --- [main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2025-01-08T11:23:41.382+08:00  WARN 15940 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'nacosConfigManager' of type [com.alibaba.cloud.nacos.NacosConfigManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [nacosAnnotationProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-01-08T11:23:41.694+08:00  INFO 15940 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7070 (http)
+2025-01-08T11:23:41.707+08:00  INFO 15940 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-08T11:23:41.707+08:00  INFO 15940 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-01-08T11:23:41.791+08:00  INFO 15940 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-08T11:23:41.791+08:00  INFO 15940 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1430 ms
+2025-01-08T11:23:41.886+08:00  INFO 15940 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2025-01-08T11:23:41.974+08:00  INFO 15940 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2025-01-08T11:23:44.840+08:00  INFO 15940 --- [main] c.a.c.n.a.NacosAnnotationProcessor       : [Nacos Config] Listening config for annotation: dataId=spring.ai.alibaba.configurable.prompt, group=DEFAULT_GROUP
+2025-01-08T11:23:44.848+08:00  INFO 15940 --- [main] c.a.c.n.a.NacosAnnotationProcessor       : [Nacos Config] register configurablePromptTemplateFactory#method#onConfigChange(List) listener on com.alibaba.cloud.ai.prompt.ConfigurablePromptTemplateFactory@79e33802 
+2025-01-08T11:23:45.052+08:00  INFO 15940 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7070 (http) with context path ''
+2025-01-08T11:23:45.064+08:00  INFO 15940 --- [main] com.drip.ForeverApplication              : Started ForeverApplication in 5.33 seconds (process running for 6.002)
+2025-01-08T11:23:48.246+08:00  INFO 15940 --- [http-nio-7070-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-08T11:23:48.246+08:00  INFO 15940 --- [http-nio-7070-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-01-08T11:23:48.248+08:00  INFO 15940 --- [http-nio-7070-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-01-08T11:53:41.754+08:00  WARN 15940 --- [Thread-14] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+2025-01-08T11:53:41.754+08:00  WARN 15940 --- [Thread-16] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+2025-01-08T11:53:41.754+08:00  WARN 15940 --- [Thread-1] c.a.n.common.executor.ThreadPoolManager  : [ThreadPoolManager] Start destroying ThreadPool
+2025-01-08T11:53:41.755+08:00  WARN 15940 --- [Thread-16] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+2025-01-08T11:53:41.755+08:00  WARN 15940 --- [Thread-1] c.a.n.common.executor.ThreadPoolManager  : [ThreadPoolManager] Destruction of the end
+2025-01-08T11:53:41.756+08:00  WARN 15940 --- [Thread-14] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+2025-01-08T11:53:41.909+08:00  INFO 15940 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2025-01-08T11:53:41.914+08:00  INFO 15940 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2025-01-08T11:53:48.929+08:00  INFO 4624 --- [main] c.a.nacos.client.logging.NacosLogging    : Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback12.LogbackNacosLoggingAdapterBuilder
+2025-01-08T11:53:48.933+08:00  INFO 4624 --- [main] c.a.nacos.client.logging.NacosLogging    : Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapterBuilder
+2025-01-08T11:53:48.934+08:00  INFO 4624 --- [main] c.a.nacos.client.logging.NacosLogging    : Nacos Logging Adapter: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapter match ch.qos.logback.classic.Logger success.
+2025-01-08T11:53:48.942+08:00  INFO 4624 --- [main] c.a.nacos.client.logging.NacosLogging    : Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.log4j2.Log4j2NacosLoggingAdapterBuilder
+2025-01-08T11:53:49.037+08:00  INFO 4624 --- [main] com.drip.ForeverApplication              : Starting ForeverApplication using Java 17.0.7 with PID 4624 (D:\IdeaProject\YueDong-Forever\target\classes started by qq316 in D:\IdeaProject\YueDong-Forever)
+2025-01-08T11:53:49.038+08:00  INFO 4624 --- [main] com.drip.ForeverApplication              : No active profile set, falling back to 1 default profile: "default"
+2025-01-08T11:53:49.797+08:00  INFO 4624 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-01-08T11:53:49.799+08:00  INFO 4624 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-01-08T11:53:49.823+08:00  INFO 4624 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2025-01-08T11:53:50.051+08:00  WARN 4624 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.nacos.NacosConfigAutoConfiguration' of type [com.alibaba.cloud.nacos.NacosConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [nacosAnnotationProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-01-08T11:53:50.057+08:00  WARN 4624 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'nacosConfigProperties' of type [com.alibaba.cloud.nacos.NacosConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [nacosAnnotationProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-01-08T11:53:50.132+08:00  INFO 4624 --- [main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2025-01-08T11:53:50.133+08:00  INFO 4624 --- [main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2025-01-08T11:53:50.136+08:00  WARN 4624 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'nacosConfigManager' of type [com.alibaba.cloud.nacos.NacosConfigManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [nacosAnnotationProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-01-08T11:53:50.452+08:00  INFO 4624 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7070 (http)
+2025-01-08T11:53:50.463+08:00  INFO 4624 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-08T11:53:50.464+08:00  INFO 4624 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-01-08T11:53:50.534+08:00  INFO 4624 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-08T11:53:50.534+08:00  INFO 4624 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1452 ms
+2025-01-08T11:53:50.625+08:00  INFO 4624 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2025-01-08T11:53:50.704+08:00  INFO 4624 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2025-01-08T11:53:53.501+08:00  INFO 4624 --- [main] c.a.c.n.a.NacosAnnotationProcessor       : [Nacos Config] Listening config for annotation: dataId=spring.ai.alibaba.configurable.prompt, group=DEFAULT_GROUP
+2025-01-08T11:53:53.510+08:00  INFO 4624 --- [main] c.a.c.n.a.NacosAnnotationProcessor       : [Nacos Config] register configurablePromptTemplateFactory#method#onConfigChange(List) listener on com.alibaba.cloud.ai.prompt.ConfigurablePromptTemplateFactory@3100b5cf 
+2025-01-08T11:53:53.727+08:00  INFO 4624 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7070 (http) with context path ''
+2025-01-08T11:53:53.739+08:00  INFO 4624 --- [main] com.drip.ForeverApplication              : Started ForeverApplication in 5.271 seconds (process running for 5.9)
+2025-01-08T11:54:22.386+08:00  INFO 4624 --- [http-nio-7070-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-08T11:54:22.386+08:00  INFO 4624 --- [http-nio-7070-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-01-08T11:54:22.388+08:00  INFO 4624 --- [http-nio-7070-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-01-08T11:55:09.633+08:00  WARN 4624 --- [Thread-1] c.a.n.common.executor.ThreadPoolManager  : [ThreadPoolManager] Start destroying ThreadPool
+2025-01-08T11:55:09.633+08:00  WARN 4624 --- [Thread-16] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+2025-01-08T11:55:09.633+08:00  WARN 4624 --- [Thread-14] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+2025-01-08T11:55:09.633+08:00  WARN 4624 --- [Thread-16] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+2025-01-08T11:55:09.633+08:00  WARN 4624 --- [Thread-1] c.a.n.common.executor.ThreadPoolManager  : [ThreadPoolManager] Destruction of the end
+2025-01-08T11:55:09.634+08:00  WARN 4624 --- [Thread-14] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+2025-01-08T11:55:09.782+08:00  INFO 4624 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2025-01-08T11:55:09.786+08:00  INFO 4624 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2025-01-08T11:55:15.858+08:00  INFO 14296 --- [main] c.a.nacos.client.logging.NacosLogging    : Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback12.LogbackNacosLoggingAdapterBuilder
+2025-01-08T11:55:15.862+08:00  INFO 14296 --- [main] c.a.nacos.client.logging.NacosLogging    : Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapterBuilder
+2025-01-08T11:55:15.862+08:00  INFO 14296 --- [main] c.a.nacos.client.logging.NacosLogging    : Nacos Logging Adapter: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapter match ch.qos.logback.classic.Logger success.
+2025-01-08T11:55:15.869+08:00  INFO 14296 --- [main] c.a.nacos.client.logging.NacosLogging    : Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.log4j2.Log4j2NacosLoggingAdapterBuilder
+2025-01-08T11:55:15.961+08:00  INFO 14296 --- [main] com.drip.ForeverApplication              : Starting ForeverApplication using Java 17.0.7 with PID 14296 (D:\IdeaProject\YueDong-Forever\target\classes started by qq316 in D:\IdeaProject\YueDong-Forever)
+2025-01-08T11:55:15.963+08:00  INFO 14296 --- [main] com.drip.ForeverApplication              : No active profile set, falling back to 1 default profile: "default"
+2025-01-08T11:55:16.729+08:00  INFO 14296 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-01-08T11:55:16.731+08:00  INFO 14296 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-01-08T11:55:16.756+08:00  INFO 14296 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2025-01-08T11:55:16.935+08:00  WARN 14296 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.nacos.NacosConfigAutoConfiguration' of type [com.alibaba.cloud.nacos.NacosConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [nacosAnnotationProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-01-08T11:55:16.942+08:00  WARN 14296 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'nacosConfigProperties' of type [com.alibaba.cloud.nacos.NacosConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [nacosAnnotationProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-01-08T11:55:16.999+08:00  INFO 14296 --- [main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2025-01-08T11:55:16.999+08:00  INFO 14296 --- [main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2025-01-08T11:55:17.000+08:00  WARN 14296 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'nacosConfigManager' of type [com.alibaba.cloud.nacos.NacosConfigManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [nacosAnnotationProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-01-08T11:55:17.282+08:00  INFO 14296 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7070 (http)
+2025-01-08T11:55:17.290+08:00  INFO 14296 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-08T11:55:17.290+08:00  INFO 14296 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-01-08T11:55:17.358+08:00  INFO 14296 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-08T11:55:17.358+08:00  INFO 14296 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1358 ms
+2025-01-08T11:55:17.446+08:00  INFO 14296 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2025-01-08T11:55:17.526+08:00  INFO 14296 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2025-01-08T11:55:20.527+08:00  INFO 14296 --- [main] c.a.c.n.a.NacosAnnotationProcessor       : [Nacos Config] Listening config for annotation: dataId=spring.ai.alibaba.configurable.prompt, group=DEFAULT_GROUP
+2025-01-08T11:55:20.535+08:00  INFO 14296 --- [main] c.a.c.n.a.NacosAnnotationProcessor       : [Nacos Config] register configurablePromptTemplateFactory#method#onConfigChange(List) listener on com.alibaba.cloud.ai.prompt.ConfigurablePromptTemplateFactory@44d36b56 
+2025-01-08T11:55:20.746+08:00  INFO 14296 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7070 (http) with context path ''
+2025-01-08T11:55:20.757+08:00  INFO 14296 --- [main] com.drip.ForeverApplication              : Started ForeverApplication in 5.285 seconds (process running for 5.829)
+2025-01-08T11:55:27.182+08:00  INFO 14296 --- [http-nio-7070-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-08T11:55:27.183+08:00  INFO 14296 --- [http-nio-7070-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-01-08T11:55:27.184+08:00  INFO 14296 --- [http-nio-7070-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-01-08T11:56:13.383+08:00  WARN 14296 --- [Thread-14] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+2025-01-08T11:56:13.383+08:00  WARN 14296 --- [Thread-16] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+2025-01-08T11:56:13.383+08:00  WARN 14296 --- [Thread-1] c.a.n.common.executor.ThreadPoolManager  : [ThreadPoolManager] Start destroying ThreadPool
+2025-01-08T11:56:13.383+08:00  WARN 14296 --- [Thread-16] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+2025-01-08T11:56:13.383+08:00  WARN 14296 --- [Thread-1] c.a.n.common.executor.ThreadPoolManager  : [ThreadPoolManager] Destruction of the end
+2025-01-08T11:56:13.383+08:00  WARN 14296 --- [Thread-14] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+2025-01-08T11:56:13.527+08:00  INFO 14296 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2025-01-08T11:56:13.530+08:00  INFO 14296 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2025-01-08T11:56:18.866+08:00  INFO 8884 --- [main] c.a.nacos.client.logging.NacosLogging    : Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback12.LogbackNacosLoggingAdapterBuilder
+2025-01-08T11:56:18.869+08:00  INFO 8884 --- [main] c.a.nacos.client.logging.NacosLogging    : Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapterBuilder
+2025-01-08T11:56:18.870+08:00  INFO 8884 --- [main] c.a.nacos.client.logging.NacosLogging    : Nacos Logging Adapter: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapter match ch.qos.logback.classic.Logger success.
+2025-01-08T11:56:18.878+08:00  INFO 8884 --- [main] c.a.nacos.client.logging.NacosLogging    : Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.log4j2.Log4j2NacosLoggingAdapterBuilder
+2025-01-08T11:56:18.977+08:00  INFO 8884 --- [main] com.drip.ForeverApplication              : Starting ForeverApplication using Java 17.0.7 with PID 8884 (D:\IdeaProject\YueDong-Forever\target\classes started by qq316 in D:\IdeaProject\YueDong-Forever)
+2025-01-08T11:56:18.978+08:00  INFO 8884 --- [main] com.drip.ForeverApplication              : No active profile set, falling back to 1 default profile: "default"
+2025-01-08T11:56:19.761+08:00  INFO 8884 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-01-08T11:56:19.763+08:00  INFO 8884 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-01-08T11:56:19.794+08:00  INFO 8884 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2025-01-08T11:56:20.013+08:00  WARN 8884 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.nacos.NacosConfigAutoConfiguration' of type [com.alibaba.cloud.nacos.NacosConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [nacosAnnotationProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-01-08T11:56:20.018+08:00  WARN 8884 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'nacosConfigProperties' of type [com.alibaba.cloud.nacos.NacosConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [nacosAnnotationProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-01-08T11:56:20.073+08:00  INFO 8884 --- [main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2025-01-08T11:56:20.073+08:00  INFO 8884 --- [main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2025-01-08T11:56:20.075+08:00  WARN 8884 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'nacosConfigManager' of type [com.alibaba.cloud.nacos.NacosConfigManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [nacosAnnotationProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-01-08T11:56:20.375+08:00  INFO 8884 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7070 (http)
+2025-01-08T11:56:20.384+08:00  INFO 8884 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-08T11:56:20.384+08:00  INFO 8884 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-01-08T11:56:20.453+08:00  INFO 8884 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-08T11:56:20.453+08:00  INFO 8884 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1436 ms
+2025-01-08T11:56:20.547+08:00  INFO 8884 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2025-01-08T11:56:20.637+08:00  INFO 8884 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2025-01-08T11:56:23.394+08:00  INFO 8884 --- [main] c.a.c.n.a.NacosAnnotationProcessor       : [Nacos Config] Listening config for annotation: dataId=spring.ai.alibaba.configurable.prompt, group=DEFAULT_GROUP
+2025-01-08T11:56:23.404+08:00  INFO 8884 --- [main] c.a.c.n.a.NacosAnnotationProcessor       : [Nacos Config] register configurablePromptTemplateFactory#method#onConfigChange(List) listener on com.alibaba.cloud.ai.prompt.ConfigurablePromptTemplateFactory@1737834 
+2025-01-08T11:56:23.609+08:00  INFO 8884 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7070 (http) with context path ''
+2025-01-08T11:56:23.623+08:00  INFO 8884 --- [main] com.drip.ForeverApplication              : Started ForeverApplication in 5.161 seconds (process running for 5.72)
+2025-01-08T11:56:24.417+08:00  INFO 8884 --- [http-nio-7070-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-08T11:56:24.418+08:00  INFO 8884 --- [http-nio-7070-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-01-08T11:56:24.421+08:00  INFO 8884 --- [http-nio-7070-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-01-08T12:04:17.247+08:00  WARN 8884 --- [Thread-14] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+2025-01-08T12:04:17.247+08:00  WARN 8884 --- [Thread-16] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+2025-01-08T12:04:17.247+08:00  WARN 8884 --- [Thread-1] c.a.n.common.executor.ThreadPoolManager  : [ThreadPoolManager] Start destroying ThreadPool
+2025-01-08T12:04:17.248+08:00  WARN 8884 --- [Thread-16] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+2025-01-08T12:04:17.248+08:00  WARN 8884 --- [Thread-14] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+2025-01-08T12:04:17.248+08:00  WARN 8884 --- [Thread-1] c.a.n.common.executor.ThreadPoolManager  : [ThreadPoolManager] Destruction of the end
+2025-01-08T12:04:17.403+08:00  INFO 8884 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2025-01-08T12:04:17.407+08:00  INFO 8884 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2025-01-08T12:04:25.010+08:00  INFO 17160 --- [main] c.a.nacos.client.logging.NacosLogging    : Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback12.LogbackNacosLoggingAdapterBuilder
+2025-01-08T12:04:25.014+08:00  INFO 17160 --- [main] c.a.nacos.client.logging.NacosLogging    : Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapterBuilder
+2025-01-08T12:04:25.015+08:00  INFO 17160 --- [main] c.a.nacos.client.logging.NacosLogging    : Nacos Logging Adapter: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapter match ch.qos.logback.classic.Logger success.
+2025-01-08T12:04:25.021+08:00  INFO 17160 --- [main] c.a.nacos.client.logging.NacosLogging    : Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.log4j2.Log4j2NacosLoggingAdapterBuilder
+2025-01-08T12:04:25.111+08:00  INFO 17160 --- [main] com.drip.ForeverApplication              : Starting ForeverApplication using Java 17.0.7 with PID 17160 (D:\IdeaProject\YueDong-Forever\target\classes started by qq316 in D:\IdeaProject\YueDong-Forever)
+2025-01-08T12:04:25.112+08:00  INFO 17160 --- [main] com.drip.ForeverApplication              : No active profile set, falling back to 1 default profile: "default"
+2025-01-08T12:04:25.853+08:00  INFO 17160 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-01-08T12:04:25.855+08:00  INFO 17160 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-01-08T12:04:25.882+08:00  INFO 17160 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2025-01-08T12:04:26.063+08:00  WARN 17160 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.nacos.NacosConfigAutoConfiguration' of type [com.alibaba.cloud.nacos.NacosConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [nacosAnnotationProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-01-08T12:04:26.069+08:00  WARN 17160 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'nacosConfigProperties' of type [com.alibaba.cloud.nacos.NacosConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [nacosAnnotationProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-01-08T12:04:26.143+08:00  INFO 17160 --- [main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2025-01-08T12:04:26.143+08:00  INFO 17160 --- [main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2025-01-08T12:04:26.145+08:00  WARN 17160 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'nacosConfigManager' of type [com.alibaba.cloud.nacos.NacosConfigManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [nacosAnnotationProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-01-08T12:04:26.408+08:00  INFO 17160 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7070 (http)
+2025-01-08T12:04:26.416+08:00  INFO 17160 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-08T12:04:26.416+08:00  INFO 17160 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-01-08T12:04:26.482+08:00  INFO 17160 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-08T12:04:26.483+08:00  INFO 17160 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1332 ms
+2025-01-08T12:04:26.567+08:00  INFO 17160 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2025-01-08T12:04:26.643+08:00  INFO 17160 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2025-01-08T12:04:29.317+08:00  INFO 17160 --- [main] c.a.c.n.a.NacosAnnotationProcessor       : [Nacos Config] Listening config for annotation: dataId=spring.ai.alibaba.configurable.prompt, group=DEFAULT_GROUP
+2025-01-08T12:04:29.356+08:00  INFO 17160 --- [main] c.a.c.n.a.NacosAnnotationProcessor       : [Nacos Config] register configurablePromptTemplateFactory#method#onConfigChange(List) listener on com.alibaba.cloud.ai.prompt.ConfigurablePromptTemplateFactory@3445341 
+2025-01-08T12:04:29.606+08:00  INFO 17160 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7070 (http) with context path ''
+2025-01-08T12:04:29.618+08:00  INFO 17160 --- [main] com.drip.ForeverApplication              : Started ForeverApplication in 5.009 seconds (process running for 5.554)
+2025-01-08T12:04:33.764+08:00  INFO 17160 --- [http-nio-7070-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-08T12:04:33.764+08:00  INFO 17160 --- [http-nio-7070-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-01-08T12:04:33.765+08:00  INFO 17160 --- [http-nio-7070-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-01-08T13:51:46.421+08:00  WARN 17160 --- [Thread-1] c.a.n.common.executor.ThreadPoolManager  : [ThreadPoolManager] Start destroying ThreadPool
+2025-01-08T13:51:46.422+08:00  WARN 17160 --- [Thread-16] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+2025-01-08T13:51:46.422+08:00  WARN 17160 --- [Thread-14] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+2025-01-08T13:51:46.428+08:00  WARN 17160 --- [Thread-16] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+2025-01-08T13:51:46.429+08:00  WARN 17160 --- [Thread-1] c.a.n.common.executor.ThreadPoolManager  : [ThreadPoolManager] Destruction of the end
+2025-01-08T13:51:46.435+08:00  WARN 17160 --- [Thread-14] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+2025-01-08T13:51:46.730+08:00  INFO 17160 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2025-01-08T13:51:46.733+08:00  INFO 17160 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed

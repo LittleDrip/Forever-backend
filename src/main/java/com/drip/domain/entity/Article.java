@@ -69,7 +69,10 @@ public class Article implements Serializable {
      * 专题 ID
      */
     private Integer specialId;
-
+    /**
+     * 文章主题
+     */
+    private String Tag;
     @TableField(exist = false)
     private static final long serialVersionUID = 1L;
 
@@ -95,7 +98,8 @@ public class Article implements Serializable {
             && (this.getLikeCount() == null ? other.getLikeCount() == null : this.getLikeCount().equals(other.getLikeCount()))
             && (this.getReadCount() == null ? other.getReadCount() == null : this.getReadCount().equals(other.getReadCount()))
             && (this.getCollectCount() == null ? other.getCollectCount() == null : this.getCollectCount().equals(other.getCollectCount()))
-            && (this.getSpecialId() == null ? other.getSpecialId() == null : this.getSpecialId().equals(other.getSpecialId()));
+            && (this.getSpecialId() == null ? other.getSpecialId() == null : this.getSpecialId().equals(other.getSpecialId()))
+            && (this.getTag() == null ? other.getTag() == null : this.getTag().equals(other.getTag()));
     }
 
     @Override
@@ -113,6 +117,7 @@ public class Article implements Serializable {
         result = prime * result + ((getReadCount() == null) ? 0 : getReadCount().hashCode());
         result = prime * result + ((getCollectCount() == null) ? 0 : getCollectCount().hashCode());
         result = prime * result + ((getSpecialId() == null) ? 0 : getSpecialId().hashCode());
+        result = prime * result + ((getTag() == null) ? 0 : getTag().hashCode());
         return result;
     }
 
@@ -134,6 +139,7 @@ public class Article implements Serializable {
         sb.append(", collectCount=").append(collectCount);
         sb.append(", specialId=").append(specialId);
         sb.append(", serialVersionUID=").append(serialVersionUID);
+        sb.append(", Tag=").append(Tag);
         sb.append("]");
         return sb.toString();
     }

@@ -21,6 +21,8 @@ public class ArticleController {
         return articleService.getAllArticle();
     }
 
+
+
     //    @SaCheckLogin
     // 分页查询
     @Tag(name = "分页查询文章")
@@ -33,6 +35,12 @@ public class ArticleController {
     @PostMapping("/pageTotal")
     public Result getArticleTotal(@RequestBody PageParam pageParam){
         return articleService.getTotals(pageParam);
+    }
+
+    @Tag(name="根据类型获取文章")
+    @GetMapping("/tag")
+    public Result getArticleByTag(@RequestParam("tag") String tag){
+        return articleService.getArticleByTag(tag);
     }
 
 

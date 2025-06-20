@@ -21,4 +21,6 @@ public interface ArticleService extends IService<Article> {
     Result getTotals(PageParam pageParam);
 
     Result getArticleConclusionById(Integer id);
+
+    Result getArticleByTag(String tag);
 }

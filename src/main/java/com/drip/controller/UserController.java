@@ -5,6 +5,7 @@ import cn.dev33.satoken.stp.SaTokenInfo;
 import cn.dev33.satoken.stp.StpUtil;
 import cn.dev33.satoken.util.SaResult;
 import com.drip.domain.dto.LoginDTO;
+import com.drip.domain.dto.RegisterDTO;
 import com.drip.service.UserService;
 import com.drip.util.Result;
 import com.drip.util.ThreadLocalUtil;
@@ -25,6 +26,12 @@ public class UserController {
     public SaResult login(@RequestBody LoginDTO loginDTO) {
 //实现登录逻辑
         return userService.login(loginDTO);
+    }
+//    注册
+    @Operation(summary = "注册")
+    @PostMapping("register")
+    public Result register(@RequestBody RegisterDTO registerDTO) {
+        return userService.register(registerDTO);
     }
 
 
@@ -51,5 +58,12 @@ public class UserController {
         ThreadLocalUtil.remove();
         return Result.ok("退出登录成功");
     }
+
+//  昵称\头像更改
+    @SaCheckLogin
+    @PostMapping("updateNicknameAndAvatar")
+    public Result updateNicknameAndAvatar(@RequestParam(required = false) String nickname, @RequestParam(required = false) String avatar) {
+        return userService.updateNicknameAndAvatar(nickname,avatar);
+}
 
 }

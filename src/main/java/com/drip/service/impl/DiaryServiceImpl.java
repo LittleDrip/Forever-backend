@@ -37,7 +37,7 @@ public class DiaryServiceImpl extends ServiceImpl<DiaryMapper, Diary>
                     // 复制属性并设置日期格式
                     DiaryVo diaryVo = BeanUtil.copyProperties(diary, DiaryVo.class);
                     // 使用 Hutool 的 DateUtil 将 Date 转换为 "yyyy-MM-dd" 格式
-                    String formattedDate = DateUtil.format(diary.getCreateTime(), "yyyy-MM-dd");
+                    String formattedDate = DateUtil.format(diary.getUpdateTime(), "yyyy-MM-dd");
                     diaryVo.setDate(formattedDate);
                     return diaryVo;
                 })

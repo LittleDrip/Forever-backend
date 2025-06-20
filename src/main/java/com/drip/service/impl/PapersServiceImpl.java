@@ -112,7 +112,7 @@ public class PapersServiceImpl extends ServiceImpl<PapersMapper, Papers>
                 .eq(UserPapers::getPaperId, id)
                 .one();
         if (userPapers == null) {
-            return Result.build(null,404, "你尚未开始作答试卷");
+            return Result.build("404",200, "你尚未开始作答试卷");
         }
         UserPapersDetailVo userPapersDetailVo = BeanUtil.copyProperties(userPapers, UserPapersDetailVo.class);
         return Result.ok(userPapersDetailVo);
